@@ -21,7 +21,7 @@ namespace Project
 
             context.Termekek.Load();
 
-            TermekListBox.DisplayMember = "Nev";
+            //TermekListBox.DisplayMember = "Nev";
             
             TermékListázás();
         }
@@ -31,12 +31,31 @@ namespace Project
             var t = from x in context.Termekek
                     where x.Nev.Contains(TermekTextBox.Text)
                     select x;
-            TermekListBox.DataSource = t.ToList();
+            termekekBindingSource.DataSource = t.ToList();
         }
 
         private void TermekTextBox_TextChanged(object sender, EventArgs e)
         {
             TermékListázás();
+        }
+
+        private void btnShowData_Click(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        
+
+        private void TermekListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TermekInfo();
+        }
+        
+        private void TermekInfo()
+        {
+
+            termekekBindingSource.DataSource = context.Termekek.Local ;
         }
     }
 }
