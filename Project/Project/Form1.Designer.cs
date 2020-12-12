@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.Label gyartoLabel;
             System.Windows.Forms.Label akku_kapacitasLabel;
             System.Windows.Forms.Label belso_memoriaLabel;
@@ -45,6 +44,7 @@
             System.Windows.Forms.Label szelessegLabel;
             System.Windows.Forms.Label tomegLabel;
             System.Windows.Forms.Label vastagsagLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.TermekTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TermekValasztasLabel = new System.Windows.Forms.Label();
@@ -104,6 +104,141 @@
             ((System.ComponentModel.ISupportInitialize)(this.termekekDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // gyartoLabel
+            // 
+            gyartoLabel.AutoSize = true;
+            gyartoLabel.Location = new System.Drawing.Point(256, 81);
+            gyartoLabel.Name = "gyartoLabel";
+            gyartoLabel.Size = new System.Drawing.Size(41, 13);
+            gyartoLabel.TabIndex = 104;
+            gyartoLabel.Text = "Gyártó:";
+            // 
+            // akku_kapacitasLabel
+            // 
+            akku_kapacitasLabel.AutoSize = true;
+            akku_kapacitasLabel.Location = new System.Drawing.Point(256, 164);
+            akku_kapacitasLabel.Name = "akku_kapacitasLabel";
+            akku_kapacitasLabel.Size = new System.Drawing.Size(118, 13);
+            akku_kapacitasLabel.TabIndex = 76;
+            akku_kapacitasLabel.Text = "Akkumulátor kapacitás:";
+            // 
+            // belso_memoriaLabel
+            // 
+            belso_memoriaLabel.AutoSize = true;
+            belso_memoriaLabel.Location = new System.Drawing.Point(256, 294);
+            belso_memoriaLabel.Name = "belso_memoriaLabel";
+            belso_memoriaLabel.Size = new System.Drawing.Size(78, 13);
+            belso_memoriaLabel.TabIndex = 78;
+            belso_memoriaLabel.Text = "Belső memória:";
+            // 
+            // bovithetoLabel
+            // 
+            bovithetoLabel.AutoSize = true;
+            bovithetoLabel.Location = new System.Drawing.Point(256, 322);
+            bovithetoLabel.Name = "bovithetoLabel";
+            bovithetoLabel.Size = new System.Drawing.Size(55, 13);
+            bovithetoLabel.TabIndex = 80;
+            bovithetoLabel.Text = "Bővithető:";
+            // 
+            // dualSIMLabel
+            // 
+            dualSIMLabel.AutoSize = true;
+            dualSIMLabel.Location = new System.Drawing.Point(256, 109);
+            dualSIMLabel.Name = "dualSIMLabel";
+            dualSIMLabel.Size = new System.Drawing.Size(54, 13);
+            dualSIMLabel.TabIndex = 82;
+            dualSIMLabel.Text = "Dual SIM:";
+            // 
+            // hosszusagLabel
+            // 
+            hosszusagLabel.AutoSize = true;
+            hosszusagLabel.Location = new System.Drawing.Point(256, 454);
+            hosszusagLabel.Name = "hosszusagLabel";
+            hosszusagLabel.Size = new System.Drawing.Size(62, 13);
+            hosszusagLabel.TabIndex = 84;
+            hosszusagLabel.Text = "Hosszúság:";
+            // 
+            // kijelzo_mereteLabel
+            // 
+            kijelzo_mereteLabel.AutoSize = true;
+            kijelzo_mereteLabel.Location = new System.Drawing.Point(256, 376);
+            kijelzo_mereteLabel.Name = "kijelzo_mereteLabel";
+            kijelzo_mereteLabel.Size = new System.Drawing.Size(75, 13);
+            kijelzo_mereteLabel.TabIndex = 86;
+            kijelzo_mereteLabel.Text = "Kijelző mérete:";
+            // 
+            // kijelzo_tipusaLabel
+            // 
+            kijelzo_tipusaLabel.AutoSize = true;
+            kijelzo_tipusaLabel.Location = new System.Drawing.Point(256, 402);
+            kijelzo_tipusaLabel.Name = "kijelzo_tipusaLabel";
+            kijelzo_tipusaLabel.Size = new System.Drawing.Size(73, 13);
+            kijelzo_tipusaLabel.TabIndex = 88;
+            kijelzo_tipusaLabel.Text = "Kijelző típusa:";
+            // 
+            // nevLabel
+            // 
+            nevLabel.AutoSize = true;
+            nevLabel.Location = new System.Drawing.Point(256, 31);
+            nevLabel.Name = "nevLabel";
+            nevLabel.Size = new System.Drawing.Size(30, 13);
+            nevLabel.TabIndex = 90;
+            nevLabel.Text = "Név:";
+            // 
+            // oprendszerLabel
+            // 
+            oprendszerLabel.AutoSize = true;
+            oprendszerLabel.Location = new System.Drawing.Point(256, 138);
+            oprendszerLabel.Name = "oprendszerLabel";
+            oprendszerLabel.Size = new System.Drawing.Size(101, 13);
+            oprendszerLabel.TabIndex = 92;
+            oprendszerLabel.Text = "Operációs rendszer:";
+            // 
+            // processzor_tipusaLabel
+            // 
+            processzor_tipusaLabel.AutoSize = true;
+            processzor_tipusaLabel.Location = new System.Drawing.Point(256, 229);
+            processzor_tipusaLabel.Name = "processzor_tipusaLabel";
+            processzor_tipusaLabel.Size = new System.Drawing.Size(95, 13);
+            processzor_tipusaLabel.TabIndex = 94;
+            processzor_tipusaLabel.Text = "Processzor típusa:";
+            // 
+            // rAMLabel
+            // 
+            rAMLabel.AutoSize = true;
+            rAMLabel.Location = new System.Drawing.Point(256, 268);
+            rAMLabel.Name = "rAMLabel";
+            rAMLabel.Size = new System.Drawing.Size(34, 13);
+            rAMLabel.TabIndex = 96;
+            rAMLabel.Text = "RAM:";
+            // 
+            // szelessegLabel
+            // 
+            szelessegLabel.AutoSize = true;
+            szelessegLabel.Location = new System.Drawing.Point(256, 480);
+            szelessegLabel.Name = "szelessegLabel";
+            szelessegLabel.Size = new System.Drawing.Size(58, 13);
+            szelessegLabel.TabIndex = 98;
+            szelessegLabel.Text = "Szélesség:";
+            // 
+            // tomegLabel
+            // 
+            tomegLabel.AutoSize = true;
+            tomegLabel.Location = new System.Drawing.Point(256, 506);
+            tomegLabel.Name = "tomegLabel";
+            tomegLabel.Size = new System.Drawing.Size(43, 13);
+            tomegLabel.TabIndex = 100;
+            tomegLabel.Text = "Tömeg:";
+            // 
+            // vastagsagLabel
+            // 
+            vastagsagLabel.AutoSize = true;
+            vastagsagLabel.Location = new System.Drawing.Point(256, 532);
+            vastagsagLabel.Name = "vastagsagLabel";
+            vastagsagLabel.Size = new System.Drawing.Size(60, 13);
+            vastagsagLabel.TabIndex = 102;
+            vastagsagLabel.Text = "Vastagság:";
             // 
             // TermekTextBox
             // 
@@ -277,270 +412,135 @@
             this.termekekDataGridView.Size = new System.Drawing.Size(210, 172);
             this.termekekDataGridView.TabIndex = 42;
             // 
-            // gyartoLabel
-            // 
-            gyartoLabel.AutoSize = true;
-            gyartoLabel.Location = new System.Drawing.Point(259, 70);
-            gyartoLabel.Name = "gyartoLabel";
-            gyartoLabel.Size = new System.Drawing.Size(41, 13);
-            gyartoLabel.TabIndex = 104;
-            gyartoLabel.Text = "Gyarto:";
-            // 
             // gyartoTextBox
             // 
             this.gyartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Gyartok.Gyarto", true));
-            this.gyartoTextBox.Location = new System.Drawing.Point(358, 67);
+            this.gyartoTextBox.Location = new System.Drawing.Point(377, 78);
             this.gyartoTextBox.Name = "gyartoTextBox";
-            this.gyartoTextBox.Size = new System.Drawing.Size(104, 20);
+            this.gyartoTextBox.Size = new System.Drawing.Size(172, 20);
             this.gyartoTextBox.TabIndex = 105;
-            // 
-            // akku_kapacitasLabel
-            // 
-            akku_kapacitasLabel.AutoSize = true;
-            akku_kapacitasLabel.Location = new System.Drawing.Point(259, 153);
-            akku_kapacitasLabel.Name = "akku_kapacitasLabel";
-            akku_kapacitasLabel.Size = new System.Drawing.Size(84, 13);
-            akku_kapacitasLabel.TabIndex = 76;
-            akku_kapacitasLabel.Text = "Akku kapacitas:";
             // 
             // akku_kapacitasTextBox
             // 
             this.akku_kapacitasTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Akku_kapacitas", true));
-            this.akku_kapacitasTextBox.Location = new System.Drawing.Point(358, 150);
+            this.akku_kapacitasTextBox.Location = new System.Drawing.Point(377, 161);
             this.akku_kapacitasTextBox.Name = "akku_kapacitasTextBox";
-            this.akku_kapacitasTextBox.Size = new System.Drawing.Size(104, 20);
+            this.akku_kapacitasTextBox.Size = new System.Drawing.Size(172, 20);
             this.akku_kapacitasTextBox.TabIndex = 77;
-            // 
-            // belso_memoriaLabel
-            // 
-            belso_memoriaLabel.AutoSize = true;
-            belso_memoriaLabel.Location = new System.Drawing.Point(259, 270);
-            belso_memoriaLabel.Name = "belso_memoriaLabel";
-            belso_memoriaLabel.Size = new System.Drawing.Size(78, 13);
-            belso_memoriaLabel.TabIndex = 78;
-            belso_memoriaLabel.Text = "Belso memoria:";
             // 
             // belso_memoriaTextBox
             // 
             this.belso_memoriaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Belso_memoria", true));
-            this.belso_memoriaTextBox.Location = new System.Drawing.Point(358, 267);
+            this.belso_memoriaTextBox.Location = new System.Drawing.Point(377, 288);
             this.belso_memoriaTextBox.Name = "belso_memoriaTextBox";
-            this.belso_memoriaTextBox.Size = new System.Drawing.Size(104, 20);
+            this.belso_memoriaTextBox.Size = new System.Drawing.Size(172, 20);
             this.belso_memoriaTextBox.TabIndex = 79;
-            // 
-            // bovithetoLabel
-            // 
-            bovithetoLabel.AutoSize = true;
-            bovithetoLabel.Location = new System.Drawing.Point(259, 298);
-            bovithetoLabel.Name = "bovithetoLabel";
-            bovithetoLabel.Size = new System.Drawing.Size(55, 13);
-            bovithetoLabel.TabIndex = 80;
-            bovithetoLabel.Text = "Bovitheto:";
             // 
             // bovithetoCheckBox
             // 
             this.bovithetoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.termekekBindingSource, "Bovitheto", true));
-            this.bovithetoCheckBox.Location = new System.Drawing.Point(358, 293);
+            this.bovithetoCheckBox.Location = new System.Drawing.Point(417, 311);
             this.bovithetoCheckBox.Name = "bovithetoCheckBox";
-            this.bovithetoCheckBox.Size = new System.Drawing.Size(104, 24);
+            this.bovithetoCheckBox.Size = new System.Drawing.Size(13, 24);
             this.bovithetoCheckBox.TabIndex = 81;
-            this.bovithetoCheckBox.Text = "checkBox1";
             this.bovithetoCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // dualSIMLabel
-            // 
-            dualSIMLabel.AutoSize = true;
-            dualSIMLabel.Location = new System.Drawing.Point(259, 98);
-            dualSIMLabel.Name = "dualSIMLabel";
-            dualSIMLabel.Size = new System.Drawing.Size(54, 13);
-            dualSIMLabel.TabIndex = 82;
-            dualSIMLabel.Text = "Dual SIM:";
             // 
             // dualSIMCheckBox
             // 
             this.dualSIMCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.termekekBindingSource, "DualSIM", true));
-            this.dualSIMCheckBox.Location = new System.Drawing.Point(358, 93);
+            this.dualSIMCheckBox.Location = new System.Drawing.Point(417, 101);
             this.dualSIMCheckBox.Name = "dualSIMCheckBox";
-            this.dualSIMCheckBox.Size = new System.Drawing.Size(104, 24);
+            this.dualSIMCheckBox.Size = new System.Drawing.Size(13, 24);
             this.dualSIMCheckBox.TabIndex = 83;
-            this.dualSIMCheckBox.Text = "checkBox1";
             this.dualSIMCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // hosszusagLabel
-            // 
-            hosszusagLabel.AutoSize = true;
-            hosszusagLabel.Location = new System.Drawing.Point(259, 430);
-            hosszusagLabel.Name = "hosszusagLabel";
-            hosszusagLabel.Size = new System.Drawing.Size(62, 13);
-            hosszusagLabel.TabIndex = 84;
-            hosszusagLabel.Text = "Hosszusag:";
             // 
             // hosszusagTextBox
             // 
             this.hosszusagTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Hosszusag", true));
-            this.hosszusagTextBox.Location = new System.Drawing.Point(358, 427);
+            this.hosszusagTextBox.Location = new System.Drawing.Point(377, 451);
             this.hosszusagTextBox.Name = "hosszusagTextBox";
-            this.hosszusagTextBox.Size = new System.Drawing.Size(104, 20);
+            this.hosszusagTextBox.Size = new System.Drawing.Size(172, 20);
             this.hosszusagTextBox.TabIndex = 85;
-            // 
-            // kijelzo_mereteLabel
-            // 
-            kijelzo_mereteLabel.AutoSize = true;
-            kijelzo_mereteLabel.Location = new System.Drawing.Point(259, 352);
-            kijelzo_mereteLabel.Name = "kijelzo_mereteLabel";
-            kijelzo_mereteLabel.Size = new System.Drawing.Size(75, 13);
-            kijelzo_mereteLabel.TabIndex = 86;
-            kijelzo_mereteLabel.Text = "Kijelzo merete:";
             // 
             // kijelzo_mereteTextBox
             // 
             this.kijelzo_mereteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Kijelzo_merete", true));
-            this.kijelzo_mereteTextBox.Location = new System.Drawing.Point(358, 349);
+            this.kijelzo_mereteTextBox.Location = new System.Drawing.Point(377, 373);
             this.kijelzo_mereteTextBox.Name = "kijelzo_mereteTextBox";
-            this.kijelzo_mereteTextBox.Size = new System.Drawing.Size(104, 20);
+            this.kijelzo_mereteTextBox.Size = new System.Drawing.Size(172, 20);
             this.kijelzo_mereteTextBox.TabIndex = 87;
-            // 
-            // kijelzo_tipusaLabel
-            // 
-            kijelzo_tipusaLabel.AutoSize = true;
-            kijelzo_tipusaLabel.Location = new System.Drawing.Point(259, 378);
-            kijelzo_tipusaLabel.Name = "kijelzo_tipusaLabel";
-            kijelzo_tipusaLabel.Size = new System.Drawing.Size(71, 13);
-            kijelzo_tipusaLabel.TabIndex = 88;
-            kijelzo_tipusaLabel.Text = "Kijelzo tipusa:";
             // 
             // kijelzo_tipusaTextBox
             // 
             this.kijelzo_tipusaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Kijelzo_tipusa", true));
-            this.kijelzo_tipusaTextBox.Location = new System.Drawing.Point(358, 375);
+            this.kijelzo_tipusaTextBox.Location = new System.Drawing.Point(377, 399);
             this.kijelzo_tipusaTextBox.Name = "kijelzo_tipusaTextBox";
-            this.kijelzo_tipusaTextBox.Size = new System.Drawing.Size(104, 20);
+            this.kijelzo_tipusaTextBox.Size = new System.Drawing.Size(172, 20);
             this.kijelzo_tipusaTextBox.TabIndex = 89;
-            // 
-            // nevLabel
-            // 
-            nevLabel.AutoSize = true;
-            nevLabel.Location = new System.Drawing.Point(259, 44);
-            nevLabel.Name = "nevLabel";
-            nevLabel.Size = new System.Drawing.Size(30, 13);
-            nevLabel.TabIndex = 90;
-            nevLabel.Text = "Nev:";
             // 
             // nevTextBox
             // 
             this.nevTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Nev", true));
-            this.nevTextBox.Location = new System.Drawing.Point(358, 41);
+            this.nevTextBox.Location = new System.Drawing.Point(377, 28);
+            this.nevTextBox.Multiline = true;
             this.nevTextBox.Name = "nevTextBox";
-            this.nevTextBox.Size = new System.Drawing.Size(104, 20);
+            this.nevTextBox.Size = new System.Drawing.Size(172, 33);
             this.nevTextBox.TabIndex = 91;
-            // 
-            // oprendszerLabel
-            // 
-            oprendszerLabel.AutoSize = true;
-            oprendszerLabel.Location = new System.Drawing.Point(259, 127);
-            oprendszerLabel.Name = "oprendszerLabel";
-            oprendszerLabel.Size = new System.Drawing.Size(64, 13);
-            oprendszerLabel.TabIndex = 92;
-            oprendszerLabel.Text = "Oprendszer:";
             // 
             // oprendszerTextBox
             // 
             this.oprendszerTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Oprendszer", true));
-            this.oprendszerTextBox.Location = new System.Drawing.Point(358, 124);
+            this.oprendszerTextBox.Location = new System.Drawing.Point(377, 135);
             this.oprendszerTextBox.Name = "oprendszerTextBox";
-            this.oprendszerTextBox.Size = new System.Drawing.Size(104, 20);
+            this.oprendszerTextBox.Size = new System.Drawing.Size(172, 20);
             this.oprendszerTextBox.TabIndex = 93;
-            // 
-            // processzor_tipusaLabel
-            // 
-            processzor_tipusaLabel.AutoSize = true;
-            processzor_tipusaLabel.Location = new System.Drawing.Point(259, 218);
-            processzor_tipusaLabel.Name = "processzor_tipusaLabel";
-            processzor_tipusaLabel.Size = new System.Drawing.Size(93, 13);
-            processzor_tipusaLabel.TabIndex = 94;
-            processzor_tipusaLabel.Text = "Processzor tipusa:";
             // 
             // processzor_tipusaTextBox
             // 
             this.processzor_tipusaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Processzor_tipusa", true));
-            this.processzor_tipusaTextBox.Location = new System.Drawing.Point(358, 215);
+            this.processzor_tipusaTextBox.Location = new System.Drawing.Point(377, 223);
+            this.processzor_tipusaTextBox.Multiline = true;
             this.processzor_tipusaTextBox.Name = "processzor_tipusaTextBox";
-            this.processzor_tipusaTextBox.Size = new System.Drawing.Size(104, 20);
+            this.processzor_tipusaTextBox.Size = new System.Drawing.Size(172, 33);
             this.processzor_tipusaTextBox.TabIndex = 95;
-            // 
-            // rAMLabel
-            // 
-            rAMLabel.AutoSize = true;
-            rAMLabel.Location = new System.Drawing.Point(259, 244);
-            rAMLabel.Name = "rAMLabel";
-            rAMLabel.Size = new System.Drawing.Size(34, 13);
-            rAMLabel.TabIndex = 96;
-            rAMLabel.Text = "RAM:";
             // 
             // rAMTextBox
             // 
             this.rAMTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "RAM", true));
-            this.rAMTextBox.Location = new System.Drawing.Point(358, 241);
+            this.rAMTextBox.Location = new System.Drawing.Point(377, 262);
             this.rAMTextBox.Name = "rAMTextBox";
-            this.rAMTextBox.Size = new System.Drawing.Size(104, 20);
+            this.rAMTextBox.Size = new System.Drawing.Size(172, 20);
             this.rAMTextBox.TabIndex = 97;
-            // 
-            // szelessegLabel
-            // 
-            szelessegLabel.AutoSize = true;
-            szelessegLabel.Location = new System.Drawing.Point(259, 456);
-            szelessegLabel.Name = "szelessegLabel";
-            szelessegLabel.Size = new System.Drawing.Size(58, 13);
-            szelessegLabel.TabIndex = 98;
-            szelessegLabel.Text = "Szelesseg:";
             // 
             // szelessegTextBox
             // 
             this.szelessegTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Szelesseg", true));
-            this.szelessegTextBox.Location = new System.Drawing.Point(358, 453);
+            this.szelessegTextBox.Location = new System.Drawing.Point(377, 477);
             this.szelessegTextBox.Name = "szelessegTextBox";
-            this.szelessegTextBox.Size = new System.Drawing.Size(104, 20);
+            this.szelessegTextBox.Size = new System.Drawing.Size(172, 20);
             this.szelessegTextBox.TabIndex = 99;
-            // 
-            // tomegLabel
-            // 
-            tomegLabel.AutoSize = true;
-            tomegLabel.Location = new System.Drawing.Point(259, 482);
-            tomegLabel.Name = "tomegLabel";
-            tomegLabel.Size = new System.Drawing.Size(43, 13);
-            tomegLabel.TabIndex = 100;
-            tomegLabel.Text = "Tomeg:";
             // 
             // tomegTextBox
             // 
             this.tomegTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Tomeg", true));
-            this.tomegTextBox.Location = new System.Drawing.Point(358, 479);
+            this.tomegTextBox.Location = new System.Drawing.Point(377, 503);
             this.tomegTextBox.Name = "tomegTextBox";
-            this.tomegTextBox.Size = new System.Drawing.Size(104, 20);
+            this.tomegTextBox.Size = new System.Drawing.Size(172, 20);
             this.tomegTextBox.TabIndex = 101;
-            // 
-            // vastagsagLabel
-            // 
-            vastagsagLabel.AutoSize = true;
-            vastagsagLabel.Location = new System.Drawing.Point(259, 508);
-            vastagsagLabel.Name = "vastagsagLabel";
-            vastagsagLabel.Size = new System.Drawing.Size(60, 13);
-            vastagsagLabel.TabIndex = 102;
-            vastagsagLabel.Text = "Vastagsag:";
             // 
             // vastagsagTextBox
             // 
             this.vastagsagTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Vastagsag", true));
-            this.vastagsagTextBox.Location = new System.Drawing.Point(358, 505);
+            this.vastagsagTextBox.Location = new System.Drawing.Point(377, 529);
             this.vastagsagTextBox.Name = "vastagsagTextBox";
-            this.vastagsagTextBox.Size = new System.Drawing.Size(104, 20);
+            this.vastagsagTextBox.Size = new System.Drawing.Size(172, 20);
             this.vastagsagTextBox.TabIndex = 103;
             // 
             // MuszakiLabel
             // 
             this.MuszakiLabel.AutoSize = true;
             this.MuszakiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.MuszakiLabel.Location = new System.Drawing.Point(259, 188);
+            this.MuszakiLabel.Location = new System.Drawing.Point(256, 199);
             this.MuszakiLabel.Name = "MuszakiLabel";
             this.MuszakiLabel.Size = new System.Drawing.Size(130, 15);
             this.MuszakiLabel.TabIndex = 106;
@@ -550,7 +550,7 @@
             // 
             this.KijelzoLabel.AutoSize = true;
             this.KijelzoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.KijelzoLabel.Location = new System.Drawing.Point(259, 328);
+            this.KijelzoLabel.Location = new System.Drawing.Point(256, 352);
             this.KijelzoLabel.Name = "KijelzoLabel";
             this.KijelzoLabel.Size = new System.Drawing.Size(55, 15);
             this.KijelzoLabel.TabIndex = 106;
@@ -560,7 +560,7 @@
             // 
             this.MeretLabel.AutoSize = true;
             this.MeretLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.MeretLabel.Location = new System.Drawing.Point(259, 406);
+            this.MeretLabel.Location = new System.Drawing.Point(256, 430);
             this.MeretLabel.Name = "MeretLabel";
             this.MeretLabel.Size = new System.Drawing.Size(63, 15);
             this.MeretLabel.TabIndex = 106;
