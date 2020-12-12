@@ -48,7 +48,6 @@
             this.TermekTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TermekValasztasLabel = new System.Windows.Forms.Label();
-            this.btnShowData = new System.Windows.Forms.Button();
             this.termekekBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -242,15 +241,15 @@
             // 
             // TermekTextBox
             // 
-            this.TermekTextBox.Location = new System.Drawing.Point(13, 249);
+            this.TermekTextBox.Location = new System.Drawing.Point(16, 249);
             this.TermekTextBox.Name = "TermekTextBox";
-            this.TermekTextBox.Size = new System.Drawing.Size(152, 20);
+            this.TermekTextBox.Size = new System.Drawing.Size(210, 20);
             this.TermekTextBox.TabIndex = 0;
             this.TermekTextBox.TextChanged += new System.EventHandler(this.TermekTextBox_TextChanged);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(60, 31);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 150);
             this.pictureBox1.TabIndex = 2;
@@ -265,16 +264,6 @@
             this.TermekValasztasLabel.Size = new System.Drawing.Size(161, 17);
             this.TermekValasztasLabel.TabIndex = 3;
             this.TermekValasztasLabel.Text = "Termék kiválasztása:";
-            // 
-            // btnShowData
-            // 
-            this.btnShowData.Location = new System.Drawing.Point(16, 471);
-            this.btnShowData.Name = "btnShowData";
-            this.btnShowData.Size = new System.Drawing.Size(149, 47);
-            this.btnShowData.TabIndex = 4;
-            this.btnShowData.Text = "Termék adatainak megjelenítése";
-            this.btnShowData.UseVisualStyleBackColor = true;
-            this.btnShowData.Click += new System.EventHandler(this.btnShowData_Click);
             // 
             // termekekBindingNavigator
             // 
@@ -403,18 +392,21 @@
             // termekekDataGridView
             // 
             this.termekekDataGridView.AutoGenerateColumns = false;
+            this.termekekDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.termekekDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.termekekDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.termekekDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3});
             this.termekekDataGridView.DataSource = this.termekekBindingSource;
             this.termekekDataGridView.Location = new System.Drawing.Point(16, 275);
             this.termekekDataGridView.Name = "termekekDataGridView";
-            this.termekekDataGridView.Size = new System.Drawing.Size(210, 172);
+            this.termekekDataGridView.Size = new System.Drawing.Size(210, 274);
             this.termekekDataGridView.TabIndex = 42;
             // 
             // gyartoTextBox
             // 
             this.gyartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Gyartok.Gyarto", true));
+            this.gyartoTextBox.Enabled = false;
             this.gyartoTextBox.Location = new System.Drawing.Point(377, 78);
             this.gyartoTextBox.Name = "gyartoTextBox";
             this.gyartoTextBox.Size = new System.Drawing.Size(172, 20);
@@ -423,6 +415,7 @@
             // akku_kapacitasTextBox
             // 
             this.akku_kapacitasTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Akku_kapacitas", true));
+            this.akku_kapacitasTextBox.Enabled = false;
             this.akku_kapacitasTextBox.Location = new System.Drawing.Point(377, 161);
             this.akku_kapacitasTextBox.Name = "akku_kapacitasTextBox";
             this.akku_kapacitasTextBox.Size = new System.Drawing.Size(172, 20);
@@ -431,6 +424,7 @@
             // belso_memoriaTextBox
             // 
             this.belso_memoriaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Belso_memoria", true));
+            this.belso_memoriaTextBox.Enabled = false;
             this.belso_memoriaTextBox.Location = new System.Drawing.Point(377, 288);
             this.belso_memoriaTextBox.Name = "belso_memoriaTextBox";
             this.belso_memoriaTextBox.Size = new System.Drawing.Size(172, 20);
@@ -439,6 +433,7 @@
             // bovithetoCheckBox
             // 
             this.bovithetoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.termekekBindingSource, "Bovitheto", true));
+            this.bovithetoCheckBox.Enabled = false;
             this.bovithetoCheckBox.Location = new System.Drawing.Point(417, 311);
             this.bovithetoCheckBox.Name = "bovithetoCheckBox";
             this.bovithetoCheckBox.Size = new System.Drawing.Size(13, 24);
@@ -448,6 +443,7 @@
             // dualSIMCheckBox
             // 
             this.dualSIMCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.termekekBindingSource, "DualSIM", true));
+            this.dualSIMCheckBox.Enabled = false;
             this.dualSIMCheckBox.Location = new System.Drawing.Point(417, 101);
             this.dualSIMCheckBox.Name = "dualSIMCheckBox";
             this.dualSIMCheckBox.Size = new System.Drawing.Size(13, 24);
@@ -457,6 +453,7 @@
             // hosszusagTextBox
             // 
             this.hosszusagTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Hosszusag", true));
+            this.hosszusagTextBox.Enabled = false;
             this.hosszusagTextBox.Location = new System.Drawing.Point(377, 451);
             this.hosszusagTextBox.Name = "hosszusagTextBox";
             this.hosszusagTextBox.Size = new System.Drawing.Size(172, 20);
@@ -465,6 +462,7 @@
             // kijelzo_mereteTextBox
             // 
             this.kijelzo_mereteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Kijelzo_merete", true));
+            this.kijelzo_mereteTextBox.Enabled = false;
             this.kijelzo_mereteTextBox.Location = new System.Drawing.Point(377, 373);
             this.kijelzo_mereteTextBox.Name = "kijelzo_mereteTextBox";
             this.kijelzo_mereteTextBox.Size = new System.Drawing.Size(172, 20);
@@ -473,6 +471,7 @@
             // kijelzo_tipusaTextBox
             // 
             this.kijelzo_tipusaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Kijelzo_tipusa", true));
+            this.kijelzo_tipusaTextBox.Enabled = false;
             this.kijelzo_tipusaTextBox.Location = new System.Drawing.Point(377, 399);
             this.kijelzo_tipusaTextBox.Name = "kijelzo_tipusaTextBox";
             this.kijelzo_tipusaTextBox.Size = new System.Drawing.Size(172, 20);
@@ -481,6 +480,7 @@
             // nevTextBox
             // 
             this.nevTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Nev", true));
+            this.nevTextBox.Enabled = false;
             this.nevTextBox.Location = new System.Drawing.Point(377, 28);
             this.nevTextBox.Multiline = true;
             this.nevTextBox.Name = "nevTextBox";
@@ -490,6 +490,7 @@
             // oprendszerTextBox
             // 
             this.oprendszerTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Oprendszer", true));
+            this.oprendszerTextBox.Enabled = false;
             this.oprendszerTextBox.Location = new System.Drawing.Point(377, 135);
             this.oprendszerTextBox.Name = "oprendszerTextBox";
             this.oprendszerTextBox.Size = new System.Drawing.Size(172, 20);
@@ -498,6 +499,7 @@
             // processzor_tipusaTextBox
             // 
             this.processzor_tipusaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Processzor_tipusa", true));
+            this.processzor_tipusaTextBox.Enabled = false;
             this.processzor_tipusaTextBox.Location = new System.Drawing.Point(377, 223);
             this.processzor_tipusaTextBox.Multiline = true;
             this.processzor_tipusaTextBox.Name = "processzor_tipusaTextBox";
@@ -507,6 +509,7 @@
             // rAMTextBox
             // 
             this.rAMTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "RAM", true));
+            this.rAMTextBox.Enabled = false;
             this.rAMTextBox.Location = new System.Drawing.Point(377, 262);
             this.rAMTextBox.Name = "rAMTextBox";
             this.rAMTextBox.Size = new System.Drawing.Size(172, 20);
@@ -515,6 +518,7 @@
             // szelessegTextBox
             // 
             this.szelessegTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Szelesseg", true));
+            this.szelessegTextBox.Enabled = false;
             this.szelessegTextBox.Location = new System.Drawing.Point(377, 477);
             this.szelessegTextBox.Name = "szelessegTextBox";
             this.szelessegTextBox.Size = new System.Drawing.Size(172, 20);
@@ -523,6 +527,7 @@
             // tomegTextBox
             // 
             this.tomegTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Tomeg", true));
+            this.tomegTextBox.Enabled = false;
             this.tomegTextBox.Location = new System.Drawing.Point(377, 503);
             this.tomegTextBox.Name = "tomegTextBox";
             this.tomegTextBox.Size = new System.Drawing.Size(172, 20);
@@ -531,6 +536,7 @@
             // vastagsagTextBox
             // 
             this.vastagsagTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Vastagsag", true));
+            this.vastagsagTextBox.Enabled = false;
             this.vastagsagTextBox.Location = new System.Drawing.Point(377, 529);
             this.vastagsagTextBox.Name = "vastagsagTextBox";
             this.vastagsagTextBox.Size = new System.Drawing.Size(172, 20);
@@ -581,6 +587,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(888, 568);
             this.Controls.Add(this.MeretLabel);
             this.Controls.Add(this.KijelzoLabel);
@@ -617,7 +624,6 @@
             this.Controls.Add(this.vastagsagTextBox);
             this.Controls.Add(this.termekekDataGridView);
             this.Controls.Add(this.termekekBindingNavigator);
-            this.Controls.Add(this.btnShowData);
             this.Controls.Add(this.TermekValasztasLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TermekTextBox);
@@ -639,7 +645,6 @@
         private System.Windows.Forms.TextBox TermekTextBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label TermekValasztasLabel;
-        private System.Windows.Forms.Button btnShowData;
         private System.Windows.Forms.BindingSource termekekBindingSource;
         private System.Windows.Forms.BindingNavigator termekekBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
