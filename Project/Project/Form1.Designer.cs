@@ -50,6 +50,7 @@
             this.TermekValasztasLabel = new System.Windows.Forms.Label();
             this.termekekBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.termekekBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -62,6 +63,7 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.termekekBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.termekekDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gyartoTextBox = new System.Windows.Forms.TextBox();
             this.akku_kapacitasTextBox = new System.Windows.Forms.TextBox();
             this.belso_memoriaTextBox = new System.Windows.Forms.TextBox();
@@ -80,8 +82,8 @@
             this.MuszakiLabel = new System.Windows.Forms.Label();
             this.KijelzoLabel = new System.Windows.Forms.Label();
             this.MeretLabel = new System.Windows.Forms.Label();
-            this.termekekBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.AdatMegjelenitesButton = new System.Windows.Forms.Button();
             gyartoLabel = new System.Windows.Forms.Label();
             akku_kapacitasLabel = new System.Windows.Forms.Label();
             belso_memoriaLabel = new System.Windows.Forms.Label();
@@ -100,8 +102,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingNavigator)).BeginInit();
             this.termekekBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.termekekDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.termekekDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // gyartoLabel
@@ -304,6 +306,10 @@
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
+            // termekekBindingSource
+            // 
+            this.termekekBindingSource.DataSource = typeof(Project.Termekek);
+            // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
@@ -400,8 +406,15 @@
             this.termekekDataGridView.DataSource = this.termekekBindingSource;
             this.termekekDataGridView.Location = new System.Drawing.Point(16, 275);
             this.termekekDataGridView.Name = "termekekDataGridView";
-            this.termekekDataGridView.Size = new System.Drawing.Size(210, 274);
+            this.termekekDataGridView.Size = new System.Drawing.Size(210, 222);
             this.termekekDataGridView.TabIndex = 42;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nev";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Név";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 150;
             // 
             // gyartoTextBox
             // 
@@ -572,16 +585,22 @@
             this.MeretLabel.TabIndex = 106;
             this.MeretLabel.Text = "Méretek:";
             // 
-            // termekekBindingSource
+            // panel1
             // 
-            this.termekekBindingSource.DataSource = typeof(Project.Termekek);
+            this.panel1.Location = new System.Drawing.Point(259, 28);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(290, 528);
+            this.panel1.TabIndex = 107;
             // 
-            // dataGridViewTextBoxColumn3
+            // AdatMegjelenitesButton
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nev";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Név";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 150;
+            this.AdatMegjelenitesButton.Location = new System.Drawing.Point(16, 512);
+            this.AdatMegjelenitesButton.Name = "AdatMegjelenitesButton";
+            this.AdatMegjelenitesButton.Size = new System.Drawing.Size(210, 44);
+            this.AdatMegjelenitesButton.TabIndex = 108;
+            this.AdatMegjelenitesButton.Text = "Termék Adatainak Megjelenítése";
+            this.AdatMegjelenitesButton.UseVisualStyleBackColor = true;
+            this.AdatMegjelenitesButton.Click += new System.EventHandler(this.AdatMegjelenitesButton_Click);
             // 
             // Form1
             // 
@@ -589,6 +608,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(888, 568);
+            this.Controls.Add(this.AdatMegjelenitesButton);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.MeretLabel);
             this.Controls.Add(this.KijelzoLabel);
             this.Controls.Add(this.MuszakiLabel);
@@ -633,8 +654,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingNavigator)).EndInit();
             this.termekekBindingNavigator.ResumeLayout(false);
             this.termekekBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.termekekDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.termekekDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -679,6 +700,8 @@
         private System.Windows.Forms.Label MuszakiLabel;
         private System.Windows.Forms.Label KijelzoLabel;
         private System.Windows.Forms.Label MeretLabel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button AdatMegjelenitesButton;
     }
 }
 

@@ -57,5 +57,10 @@ namespace Project
 
             termekekBindingSource.DataSource = context.Termekek.Local ;
         }
+
+        private void AdatMegjelenitesButton_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
     }
 }
