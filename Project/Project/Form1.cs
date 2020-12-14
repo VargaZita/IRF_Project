@@ -21,7 +21,7 @@ namespace Project
 
             context.Termekek.Load();
 
-            //TermekListBox.DisplayMember = "Nev";
+            
             
             TermékListázás();
         }

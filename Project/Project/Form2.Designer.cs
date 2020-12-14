@@ -47,30 +47,34 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ertekelesekDataGridView = new System.Windows.Forms.DataGridView();
             this.TermekNevTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.csillagszamlbl = new System.Windows.Forms.Label();
+            this.megjegyzeseklbl = new System.Windows.Forms.Label();
             this.MegjegyzesTextBox = new System.Windows.Forms.TextBox();
             this.ErtekelesAddButton = new System.Windows.Forms.Button();
-            this.ertekeloGomb1 = new Project.ErtekeloGomb();
-            this.termekekBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ertekelesekBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.TermekListBox = new System.Windows.Forms.ListBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ertekelesSzamBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.osszesenlbl = new System.Windows.Forms.Label();
+            this.atlaglbl = new System.Windows.Forms.Label();
+            this.osszesentextbox = new System.Windows.Forms.TextBox();
+            this.atlagtextbox = new System.Windows.Forms.TextBox();
             this.csillagSzamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mennyisegDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ertekelesSzamBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ertekeloGomb1 = new Project.ErtekeloGomb();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.termekekBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ertekelesekBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ertekelesekDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ertekelesekBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ertekelesSzamBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ertekelesekBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -209,23 +213,23 @@
             this.TermekNevTextBox.TabIndex = 4;
             this.TermekNevTextBox.TextChanged += new System.EventHandler(this.TermekNevTextBox_TextChanged);
             // 
-            // label1
+            // csillagszamlbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(173, 325);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Csillagok száma:";
+            this.csillagszamlbl.AutoSize = true;
+            this.csillagszamlbl.Location = new System.Drawing.Point(173, 325);
+            this.csillagszamlbl.Name = "csillagszamlbl";
+            this.csillagszamlbl.Size = new System.Drawing.Size(85, 13);
+            this.csillagszamlbl.TabIndex = 5;
+            this.csillagszamlbl.Text = "Csillagok száma:";
             // 
-            // label2
+            // megjegyzeseklbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(173, 359);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Megjegyzések:";
+            this.megjegyzeseklbl.AutoSize = true;
+            this.megjegyzeseklbl.Location = new System.Drawing.Point(173, 359);
+            this.megjegyzeseklbl.Name = "megjegyzeseklbl";
+            this.megjegyzeseklbl.Size = new System.Drawing.Size(78, 13);
+            this.megjegyzeseklbl.TabIndex = 5;
+            this.megjegyzeseklbl.Text = "Megjegyzések:";
             // 
             // MegjegyzesTextBox
             // 
@@ -244,50 +248,6 @@
             this.ErtekelesAddButton.Text = "Értékelés elküldése";
             this.ErtekelesAddButton.UseVisualStyleBackColor = true;
             this.ErtekelesAddButton.Click += new System.EventHandler(this.ErtekelesAddButton_Click);
-            // 
-            // ertekeloGomb1
-            // 
-            this.ertekeloGomb1.BackColor = System.Drawing.Color.Yellow;
-            this.ertekeloGomb1.CsillagValue = 5;
-            this.ertekeloGomb1.Location = new System.Drawing.Point(323, 319);
-            this.ertekeloGomb1.Name = "ertekeloGomb1";
-            this.ertekeloGomb1.Size = new System.Drawing.Size(25, 25);
-            this.ertekeloGomb1.TabIndex = 6;
-            this.ertekeloGomb1.Text = "\r\n5";
-            this.ertekeloGomb1.UseVisualStyleBackColor = false;
-            // 
-            // termekekBindingSource
-            // 
-            this.termekekBindingSource.DataSource = typeof(Project.Termekek);
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "TermekFK";
-            this.dataGridViewTextBoxColumn2.DataSource = this.termekekBindingSource;
-            this.dataGridViewTextBoxColumn2.DisplayMember = "Nev";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Név";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn2.ValueMember = "TermekID";
-            this.dataGridViewTextBoxColumn2.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Csillag";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Csillag";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Megjegyzesek";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Megjegyzések";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // ertekelesekBindingSource
-            // 
-            this.ertekelesekBindingSource.DataSource = typeof(Project.Ertekelesek);
             // 
             // TermekListBox
             // 
@@ -308,12 +268,15 @@
             this.chart1.Location = new System.Drawing.Point(487, 45);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.Gold;
+            series1.EmptyPointStyle.IsValueShownAsLabel = true;
+            series1.IsValueShownAsLabel = true;
             series1.Legend = "Legend1";
-            series1.Name = "series";
+            series1.Name = "Értékelések";
             series1.XValueMember = "CsillagSzam";
             series1.YValueMembers = "Mennyiseg";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(300, 300);
+            this.chart1.Size = new System.Drawing.Size(300, 220);
             this.chart1.TabIndex = 10;
             this.chart1.Text = "chart1";
             // 
@@ -330,14 +293,46 @@
             this.dataGridView1.Size = new System.Drawing.Size(300, 191);
             this.dataGridView1.TabIndex = 11;
             // 
-            // ertekelesSzamBindingSource
+            // osszesenlbl
             // 
-            this.ertekelesSzamBindingSource.DataSource = typeof(Project.ErtekelesSzam);
+            this.osszesenlbl.AutoSize = true;
+            this.osszesenlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.osszesenlbl.Location = new System.Drawing.Point(487, 272);
+            this.osszesenlbl.Name = "osszesenlbl";
+            this.osszesenlbl.Size = new System.Drawing.Size(120, 15);
+            this.osszesenlbl.TabIndex = 12;
+            this.osszesenlbl.Text = "Összes értékelés:";
+            // 
+            // atlaglbl
+            // 
+            this.atlaglbl.AutoSize = true;
+            this.atlaglbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.atlaglbl.Location = new System.Drawing.Point(684, 272);
+            this.atlaglbl.Name = "atlaglbl";
+            this.atlaglbl.Size = new System.Drawing.Size(43, 15);
+            this.atlaglbl.TabIndex = 13;
+            this.atlaglbl.Text = "Átlag:";
+            // 
+            // osszesentextbox
+            // 
+            this.osszesentextbox.Enabled = false;
+            this.osszesentextbox.Location = new System.Drawing.Point(490, 299);
+            this.osszesentextbox.Name = "osszesentextbox";
+            this.osszesentextbox.Size = new System.Drawing.Size(100, 20);
+            this.osszesentextbox.TabIndex = 14;
+            // 
+            // atlagtextbox
+            // 
+            this.atlagtextbox.Enabled = false;
+            this.atlagtextbox.Location = new System.Drawing.Point(687, 299);
+            this.atlagtextbox.Name = "atlagtextbox";
+            this.atlagtextbox.Size = new System.Drawing.Size(100, 20);
+            this.atlagtextbox.TabIndex = 15;
             // 
             // csillagSzamDataGridViewTextBoxColumn
             // 
             this.csillagSzamDataGridViewTextBoxColumn.DataPropertyName = "CsillagSzam";
-            this.csillagSzamDataGridViewTextBoxColumn.HeaderText = "CsillagSzam";
+            this.csillagSzamDataGridViewTextBoxColumn.HeaderText = "Csillag";
             this.csillagSzamDataGridViewTextBoxColumn.Name = "csillagSzamDataGridViewTextBoxColumn";
             // 
             // mennyisegDataGridViewTextBoxColumn
@@ -346,20 +341,72 @@
             this.mennyisegDataGridViewTextBoxColumn.HeaderText = "Mennyiseg";
             this.mennyisegDataGridViewTextBoxColumn.Name = "mennyisegDataGridViewTextBoxColumn";
             // 
+            // ertekelesSzamBindingSource
+            // 
+            this.ertekelesSzamBindingSource.DataSource = typeof(Project.ErtekelesSzam);
+            // 
+            // ertekeloGomb1
+            // 
+            this.ertekeloGomb1.BackColor = System.Drawing.Color.Yellow;
+            this.ertekeloGomb1.CsillagValue = 5;
+            this.ertekeloGomb1.Location = new System.Drawing.Point(323, 319);
+            this.ertekeloGomb1.Name = "ertekeloGomb1";
+            this.ertekeloGomb1.Size = new System.Drawing.Size(25, 25);
+            this.ertekeloGomb1.TabIndex = 6;
+            this.ertekeloGomb1.Text = "\r\n5";
+            this.ertekeloGomb1.UseVisualStyleBackColor = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "TermekFK";
+            this.dataGridViewTextBoxColumn2.DataSource = this.termekekBindingSource;
+            this.dataGridViewTextBoxColumn2.DisplayMember = "Nev";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Név";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn2.ValueMember = "TermekID";
+            this.dataGridViewTextBoxColumn2.Width = 200;
+            // 
+            // termekekBindingSource
+            // 
+            this.termekekBindingSource.DataSource = typeof(Project.Termekek);
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Csillag";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Csillag";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Megjegyzesek";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Megjegyzések";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // ertekelesekBindingSource
+            // 
+            this.ertekelesekBindingSource.DataSource = typeof(Project.Ertekelesek);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(817, 742);
+            this.ClientSize = new System.Drawing.Size(817, 579);
+            this.Controls.Add(this.atlagtextbox);
+            this.Controls.Add(this.osszesentextbox);
+            this.Controls.Add(this.atlaglbl);
+            this.Controls.Add(this.osszesenlbl);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.TermekListBox);
             this.Controls.Add(this.ErtekelesAddButton);
             this.Controls.Add(this.MegjegyzesTextBox);
             this.Controls.Add(this.ertekeloGomb1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.megjegyzeseklbl);
+            this.Controls.Add(this.csillagszamlbl);
             this.Controls.Add(this.TermekNevTextBox);
             this.Controls.Add(this.ertekelesekDataGridView);
             this.Controls.Add(this.bindingNavigator1);
@@ -369,11 +416,11 @@
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ertekelesekDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ertekelesekBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ertekelesSzamBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ertekelesekBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -400,16 +447,20 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.TextBox TermekNevTextBox;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label csillagszamlbl;
         private ErtekeloGomb ertekeloGomb1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label megjegyzeseklbl;
         private System.Windows.Forms.TextBox MegjegyzesTextBox;
         private System.Windows.Forms.Button ErtekelesAddButton;
         private System.Windows.Forms.ListBox TermekListBox;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource ertekelesSzamBindingSource;
+        private System.Windows.Forms.Label osszesenlbl;
+        private System.Windows.Forms.Label atlaglbl;
+        private System.Windows.Forms.TextBox osszesentextbox;
+        private System.Windows.Forms.TextBox atlagtextbox;
         private System.Windows.Forms.DataGridViewTextBoxColumn csillagSzamDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mennyisegDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource ertekelesSzamBindingSource;
     }
 }

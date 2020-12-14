@@ -36,7 +36,7 @@ namespace Project
         {
            
             var ertekelesek = from x in context.Ertekelesek
-                            select x;
+                              select x;
                             
             ertekelesekBindingSource.DataSource = ertekelesek.ToList();
         }
@@ -82,15 +82,61 @@ namespace Project
                                    where x.TermekFK == ((Termekek)TermekListBox.SelectedItem).TermekID
                                    select x;
 
+
             var ertekelesszam = from x in ValasztottTermek
                                 group x by new { x.Csillag } into g
                                 select new ErtekelesSzam()
                                 {
                                     CsillagSzam = g.Key.Csillag.ToString(),
                                     Mennyiseg = (from x in g select x).Count()
+
                                 };
+            GetÖsszegÉsÁtlag(ValasztottTermek);
+
             ertekelesSzamBindingSource.DataSource = ertekelesszam.ToList();
             chart1.DataBind();
+        }
+
+        private void GetÖsszegÉsÁtlag(IQueryable<Ertekelesek> ValasztottTermek)
+        {
+            var egycsillag = (from x in ValasztottTermek
+                              where x.Csillag == 1
+                              select x).Count();
+            var ketcsillag = (from x in ValasztottTermek
+                              where x.Csillag == 2
+                              select x).Count();
+            var haromcsillag = (from x in ValasztottTermek
+                                where x.Csillag == 3
+                                select x).Count();
+            var negycsillag = (from x in ValasztottTermek
+                               where x.Csillag == 4
+                               select x).Count();
+            var otcsillag = (from x in ValasztottTermek
+                             where x.Csillag == 5
+                             select x).Count();
+
+            double szorzat = 1 * egycsillag + 2 * ketcsillag + 3 * haromcsillag + 4 * negycsillag + 5 * otcsillag;
+
+
+            double ossz = (from x in ValasztottTermek
+                        select x).Count();
+
+            if (ossz>0)
+            {
+                double atlag = szorzat / ossz;
+
+                double kerekatlag = Math.Round(atlag, 2);
+
+                osszesentextbox.Text = ossz.ToString();
+                atlagtextbox.Text = kerekatlag.ToString();
+            }
+            else
+            {
+                osszesentextbox.Text = ossz.ToString();
+                atlagtextbox.Text = 0.ToString();
+
+            }
+
         }
     }
 }

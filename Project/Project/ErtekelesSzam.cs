@@ -10,5 +10,6 @@ namespace Project
     {
         public string CsillagSzam { get; set; }
         public int Mennyiseg { get; set; }
+
     }
 }
