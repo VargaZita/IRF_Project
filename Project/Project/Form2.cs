@@ -26,9 +26,9 @@ namespace Project
 
             ÉrtékelésListázás();
             TermékListázás();
-
         }
 
+        
         private void ÉrtékelésListázás()
         {
            
