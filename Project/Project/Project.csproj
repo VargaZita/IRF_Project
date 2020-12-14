@@ -80,6 +80,7 @@
     <Compile Include="Ertekelesek.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="ErtekelesSzam.cs" />
     <Compile Include="ErtekeloGomb.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -144,6 +145,7 @@
     <None Include="Properties\DataSources\Arak.datasource" />
     <None Include="Properties\DataSources\Boltok.datasource" />
     <None Include="Properties\DataSources\Ertekelesek.datasource" />
+    <None Include="Properties\DataSources\ErtekelesSzam.datasource" />
     <None Include="Properties\DataSources\Gyartok.datasource" />
     <None Include="Properties\DataSources\Termekek.datasource" />
     <None Include="Properties\Settings.settings">

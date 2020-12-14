@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -55,11 +58,19 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ertekelesekBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.TermekListBox = new System.Windows.Forms.ListBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ertekelesSzamBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.csillagSzamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mennyisegDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ertekelesekDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ertekelesekBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ertekelesSzamBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -285,6 +296,55 @@
             this.TermekListBox.Name = "TermekListBox";
             this.TermekListBox.Size = new System.Drawing.Size(160, 225);
             this.TermekListBox.TabIndex = 9;
+            this.TermekListBox.SelectedIndexChanged += new System.EventHandler(this.TermekListBox_SelectedIndexChanged);
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.DataSource = this.ertekelesSzamBindingSource;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(487, 45);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "series";
+            series1.XValueMember = "CsillagSzam";
+            series1.YValueMembers = "Mennyiseg";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(300, 300);
+            this.chart1.TabIndex = 10;
+            this.chart1.Text = "chart1";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.csillagSzamDataGridViewTextBoxColumn,
+            this.mennyisegDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.ertekelesSzamBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(487, 359);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(300, 191);
+            this.dataGridView1.TabIndex = 11;
+            // 
+            // ertekelesSzamBindingSource
+            // 
+            this.ertekelesSzamBindingSource.DataSource = typeof(Project.ErtekelesSzam);
+            // 
+            // csillagSzamDataGridViewTextBoxColumn
+            // 
+            this.csillagSzamDataGridViewTextBoxColumn.DataPropertyName = "CsillagSzam";
+            this.csillagSzamDataGridViewTextBoxColumn.HeaderText = "CsillagSzam";
+            this.csillagSzamDataGridViewTextBoxColumn.Name = "csillagSzamDataGridViewTextBoxColumn";
+            // 
+            // mennyisegDataGridViewTextBoxColumn
+            // 
+            this.mennyisegDataGridViewTextBoxColumn.DataPropertyName = "Mennyiseg";
+            this.mennyisegDataGridViewTextBoxColumn.HeaderText = "Mennyiseg";
+            this.mennyisegDataGridViewTextBoxColumn.Name = "mennyisegDataGridViewTextBoxColumn";
             // 
             // Form2
             // 
@@ -292,6 +352,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(817, 742);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.TermekListBox);
             this.Controls.Add(this.ErtekelesAddButton);
             this.Controls.Add(this.MegjegyzesTextBox);
@@ -309,6 +371,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ertekelesekDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ertekelesekBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ertekelesSzamBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -341,5 +406,10 @@
         private System.Windows.Forms.TextBox MegjegyzesTextBox;
         private System.Windows.Forms.Button ErtekelesAddButton;
         private System.Windows.Forms.ListBox TermekListBox;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn csillagSzamDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mennyisegDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource ertekelesSzamBindingSource;
     }
 }

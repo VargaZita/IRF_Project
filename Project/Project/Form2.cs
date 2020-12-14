@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Project
 {
@@ -26,9 +27,11 @@ namespace Project
 
             ÉrtékelésListázás();
             TermékListázás();
+
         }
 
         
+
         private void ÉrtékelésListázás()
         {
            
@@ -61,7 +64,33 @@ namespace Project
 
             context.Ertekelesek.Add(ertplusz);
             context.SaveChanges();
+
             ÉrtékelésListázás();
+            ShowOnChart();
+
+        }
+
+        private void TermekListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            ShowOnChart();
+        }
+
+        private void ShowOnChart()
+        {
+            var ValasztottTermek = from x in context.Ertekelesek
+                                   where x.TermekFK == ((Termekek)TermekListBox.SelectedItem).TermekID
+                                   select x;
+
+            var ertekelesszam = from x in ValasztottTermek
+                                group x by new { x.Csillag } into g
+                                select new ErtekelesSzam()
+                                {
+                                    CsillagSzam = g.Key.Csillag.ToString(),
+                                    Mennyiseg = (from x in g select x).Count()
+                                };
+            ertekelesSzamBindingSource.DataSource = ertekelesszam.ToList();
+            chart1.DataBind();
         }
     }
 }
