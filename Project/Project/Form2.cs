@@ -30,14 +30,14 @@ namespace Project
 
         }
 
-        
+
 
         private void ÉrtékelésListázás()
         {
-           
+
             var ertekelesek = from x in context.Ertekelesek
                               select x;
-                            
+
             ertekelesekBindingSource.DataSource = ertekelesek.ToList();
         }
 
@@ -74,27 +74,61 @@ namespace Project
         {
 
             ShowOnChart();
+            
+            
         }
 
         private void ShowOnChart()
         {
+            
             var ValasztottTermek = from x in context.Ertekelesek
                                    where x.TermekFK == ((Termekek)TermekListBox.SelectedItem).TermekID
                                    select x;
 
 
+            int darabszam = ValasztottTermek.Count();
+            if (darabszam==0)
+            {
+                panel1.Visible = true;
+                label1.Visible = true;
+            }
+            else
+            {
+                panel1.Visible = false;
+                label1.Visible = false;
+            }
             var ertekelesszam = from x in ValasztottTermek
                                 group x by new { x.Csillag } into g
                                 select new ErtekelesSzam()
                                 {
                                     CsillagSzam = g.Key.Csillag.ToString(),
                                     Mennyiseg = (from x in g select x).Count()
-
                                 };
+
+            ShowMegjegyzes(ValasztottTermek);
+
             GetÖsszegÉsÁtlag(ValasztottTermek);
 
             ertekelesSzamBindingSource.DataSource = ertekelesszam.ToList();
             chart1.DataBind();
+        }
+
+        private void ShowMegjegyzes(IQueryable<Ertekelesek> ValasztottTermek)
+        {
+            var megjegyzes = (from x in ValasztottTermek
+                              where x.Megjegyzesek != null
+                              select x.Megjegyzesek).FirstOrDefault();
+
+            textBox1.Text = megjegyzes.ToString();
+            textBox1.Enabled = false;
+            textBox1.Font = new Font(textBox1.Font, FontStyle.Bold);
+
+            if (textBox1.Text == "")
+            {
+
+                textBox1.Text = "Ehhez a termékhez még nem fűztek megjegyzést. Legyél Te az első!";
+
+            }
         }
 
         private void GetÖsszegÉsÁtlag(IQueryable<Ertekelesek> ValasztottTermek)
