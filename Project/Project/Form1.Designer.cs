@@ -45,6 +45,7 @@
             System.Windows.Forms.Label tomegLabel;
             System.Windows.Forms.Label vastagsagLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.Label termekIDLabel;
             this.TermekTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TermekValasztasLabel = new System.Windows.Forms.Label();
@@ -87,8 +88,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.termekIDTextBox = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.termekekBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arakBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.boltokBindingSource = new System.Windows.Forms.BindingSource(this.components);
             gyartoLabel = new System.Windows.Forms.Label();
             akku_kapacitasLabel = new System.Windows.Forms.Label();
             belso_memoriaLabel = new System.Windows.Forms.Label();
@@ -104,12 +110,15 @@
             szelessegLabel = new System.Windows.Forms.Label();
             tomegLabel = new System.Windows.Forms.Label();
             vastagsagLabel = new System.Windows.Forms.Label();
+            termekIDLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingNavigator)).BeginInit();
             this.termekekBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.termekekDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arakBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boltokBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // gyartoLabel
@@ -299,7 +308,7 @@
             this.termekekBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.termekekBindingNavigator.Name = "termekekBindingNavigator";
             this.termekekBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.termekekBindingNavigator.Size = new System.Drawing.Size(888, 25);
+            this.termekekBindingNavigator.Size = new System.Drawing.Size(840, 25);
             this.termekekBindingNavigator.TabIndex = 5;
             this.termekekBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -650,6 +659,41 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Boltok";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Boltok";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // termekIDLabel
+            // 
+            termekIDLabel.AutoSize = true;
+            termekIDLabel.Location = new System.Drawing.Point(256, 68);
+            termekIDLabel.Name = "termekIDLabel";
+            termekIDLabel.Size = new System.Drawing.Size(60, 13);
+            termekIDLabel.TabIndex = 109;
+            termekIDLabel.Text = "Termek ID:";
+            termekIDLabel.Visible = false;
+            // 
+            // termekIDTextBox
+            // 
+            this.termekIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "TermekID", true));
+            this.termekIDTextBox.Location = new System.Drawing.Point(377, 61);
+            this.termekIDTextBox.Name = "termekIDTextBox";
+            this.termekIDTextBox.Size = new System.Drawing.Size(172, 20);
+            this.termekIDTextBox.TabIndex = 110;
+            this.termekIDTextBox.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(632, 238);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(124, 41);
+            this.button2.TabIndex = 109;
+            this.button2.Text = "Árak áttekintése";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // termekekBindingSource
             // 
             this.termekekBindingSource.DataSource = typeof(Project.Termekek);
@@ -661,12 +705,21 @@
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.Width = 150;
             // 
+            // arakBindingSource
+            // 
+            this.arakBindingSource.DataSource = typeof(Project.Arak);
+            // 
+            // boltokBindingSource
+            // 
+            this.boltokBindingSource.DataSource = typeof(Project.Boltok);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(888, 568);
+            this.ClientSize = new System.Drawing.Size(840, 569);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.AdatMegjelenitesButton);
             this.Controls.Add(this.panel1);
@@ -708,6 +761,8 @@
             this.Controls.Add(this.TermekValasztasLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TermekTextBox);
+            this.Controls.Add(this.termekIDTextBox);
+            this.Controls.Add(termekIDLabel);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -717,6 +772,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.termekekDataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arakBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boltokBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -768,6 +825,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.BindingSource boltokBindingSource;
+        private System.Windows.Forms.BindingSource arakBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.TextBox termekIDTextBox;
+        private System.Windows.Forms.Button button2;
     }
 }
 

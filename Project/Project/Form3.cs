@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
         Database1Entities context = new Database1Entities();
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
 
@@ -22,17 +22,23 @@ namespace Project
             context.Arak.Load();
             context.Boltok.Load();
 
-            
+            termekekBindingSource.DataSource = context.Termekek.Local;
+            boltokBindingSource.DataSource = context.Boltok.Local;
+
             TermékListázás();
+            ÁrListázás();
         }
 
-       
         private void TermékListázás()
         {
             var t = from x in context.Termekek
                     where x.Nev.Contains(TermekTextBox.Text)
                     select x;
-            termekekBindingSource.DataSource = t.ToList();
+            TermekListBox.DataSource = t.ToList();
+            TermekListBox.DisplayMember = "Nev";
+
+
+            
         }
 
         private void TermekTextBox_TextChanged(object sender, EventArgs e)
@@ -40,40 +46,23 @@ namespace Project
             TermékListázás();
         }
 
-        private void btnShowData_Click(object sender, EventArgs e)
-        {
-           
-            
-        }
-
-        
-
         private void TermekListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TermekInfo();
-        }
-        
-        private void TermekInfo()
-        {
-
-            termekekBindingSource.DataSource = context.Termekek.Local ;
+            ÁrListázás();
         }
 
-        private void AdatMegjelenitesButton_Click(object sender, EventArgs e)
+        private void ÁrListázás()
         {
-            panel1.Visible = false;
+            var termekvalaszto = from x in context.Arak
+                                 where x.TermekFK == ((Termekek)TermekListBox.SelectedItem).TermekID
+                                 select x;
+
+            arakBindingSource.DataSource = termekvalaszto.ToList();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void uRLTextBox_DoubleClick(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            f2.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form3 f3 = new Form3();
-            f3.Show();
+            System.Diagnostics.Process.Start(uRLTextBox.Text);
         }
     }
 }

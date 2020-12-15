@@ -115,13 +115,21 @@ namespace Project
 
         private void ShowMegjegyzes(IQueryable<Ertekelesek> ValasztottTermek)
         {
+
             var megjegyzes = (from x in ValasztottTermek
                               where x.Megjegyzesek != null
                               select x.Megjegyzesek).FirstOrDefault();
-
-            textBox1.Text = megjegyzes.ToString();
-            textBox1.Enabled = false;
-            textBox1.Font = new Font(textBox1.Font, FontStyle.Bold);
+            if (megjegyzes==null)
+            {
+                textBox1.Text = "Ehhez a termékhez még nem fűztek megjegyzést. Legyél Te az első!";
+            }
+            else
+            {
+                textBox1.Text = megjegyzes.ToString();
+                textBox1.Enabled = false;
+                textBox1.Font = new Font(textBox1.Font, FontStyle.Bold);
+            }
+            
 
             if (textBox1.Text == "")
             {
