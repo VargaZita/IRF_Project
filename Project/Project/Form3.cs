@@ -64,5 +64,22 @@ namespace Project
         {
             System.Diagnostics.Process.Start(uRLTextBox.Text);
         }
+
+        private void KedvezmenyButton_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            KedvezmenyButton.Visible = false;
+
+            char[] lettersnumbers = "qwertzuiopasdfghjklyxcvbnm1234567890".ToCharArray();
+            Random rnd = new Random();
+            string kuponkod="";
+            int kedvezmeny = rnd.Next(0, 49);
+            KedvezmenyszazalekTextBox.Text = kedvezmeny.ToString();
+            for (int i = 0; i < 6; i++)
+            {
+                kuponkod += lettersnumbers[rnd.Next(0, 35)].ToString();
+            }
+            KedvezmenykodTextBox.Text = kuponkod;
+        }
     }
 }

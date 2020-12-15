@@ -60,6 +60,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.KedvezmenyButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.KedvezmenyszazalekTextBox = new System.Windows.Forms.TextBox();
+            this.KedvezmenykodTextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.boltokBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.arakBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -71,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.arakBindingNavigator)).BeginInit();
             this.arakBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arakDataGridView)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.boltokBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arakBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).BeginInit();
@@ -359,6 +367,67 @@
             this.label4.TabIndex = 39;
             this.label4.Text = "Ft";
             // 
+            // KedvezmenyButton
+            // 
+            this.KedvezmenyButton.Location = new System.Drawing.Point(25, 41);
+            this.KedvezmenyButton.Name = "KedvezmenyButton";
+            this.KedvezmenyButton.Size = new System.Drawing.Size(111, 48);
+            this.KedvezmenyButton.TabIndex = 40;
+            this.KedvezmenyButton.Text = "Kérek Kedvezményt!";
+            this.KedvezmenyButton.UseVisualStyleBackColor = true;
+            this.KedvezmenyButton.Click += new System.EventHandler(this.KedvezmenyButton_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.KedvezmenyButton);
+            this.panel1.Location = new System.Drawing.Point(12, 284);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(168, 125);
+            this.panel1.TabIndex = 41;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(24, 291);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "Kedvezmény:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(103, 314);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(15, 13);
+            this.label6.TabIndex = 42;
+            this.label6.Text = "%";
+            // 
+            // KedvezmenyszazalekTextBox
+            // 
+            this.KedvezmenyszazalekTextBox.Enabled = false;
+            this.KedvezmenyszazalekTextBox.Location = new System.Drawing.Point(49, 307);
+            this.KedvezmenyszazalekTextBox.Name = "KedvezmenyszazalekTextBox";
+            this.KedvezmenyszazalekTextBox.Size = new System.Drawing.Size(48, 20);
+            this.KedvezmenyszazalekTextBox.TabIndex = 43;
+            // 
+            // KedvezmenykodTextBox
+            // 
+            this.KedvezmenykodTextBox.Enabled = false;
+            this.KedvezmenykodTextBox.Location = new System.Drawing.Point(27, 353);
+            this.KedvezmenykodTextBox.Name = "KedvezmenykodTextBox";
+            this.KedvezmenykodTextBox.Size = new System.Drawing.Size(127, 20);
+            this.KedvezmenykodTextBox.TabIndex = 43;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(24, 337);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(89, 13);
+            this.label7.TabIndex = 42;
+            this.label7.Text = "Kedvezménykód:";
+            // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "BoltFK";
@@ -389,6 +458,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(734, 414);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -405,12 +475,18 @@
             this.Controls.Add(arLabel);
             this.Controls.Add(this.arTextBox);
             this.Controls.Add(this.arakBindingNavigator);
+            this.Controls.Add(this.KedvezmenykodTextBox);
+            this.Controls.Add(this.KedvezmenyszazalekTextBox);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label5);
             this.Name = "Form3";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.arakBindingNavigator)).EndInit();
             this.arakBindingNavigator.ResumeLayout(false);
             this.arakBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arakDataGridView)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.boltokBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arakBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).EndInit();
@@ -451,5 +527,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button KedvezmenyButton;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox KedvezmenyszazalekTextBox;
+        private System.Windows.Forms.TextBox KedvezmenykodTextBox;
+        private System.Windows.Forms.Label label7;
     }
 }
