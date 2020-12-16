@@ -25,21 +25,21 @@ namespace Project
             termekekBindingSource.DataSource = context.Termekek.Local;
 
 
-            ÉrtékelésListázás();
+            //ÉrtékelésListázás();
             TermékListázás();
 
         }
 
 
 
-        private void ÉrtékelésListázás()
-        {
+        //private void ÉrtékelésListázás()
+        //{
 
-            var ertekelesek = from x in context.Ertekelesek
-                              select x;
+        //    var ertekelesek = from x in context.Ertekelesek
+        //                      select x;
 
-            ertekelesekBindingSource.DataSource = ertekelesek.ToList();
-        }
+        //    ertekelesekBindingSource.DataSource = ertekelesek.ToList();
+        //}
 
         private void TermékListázás()
         {
@@ -65,7 +65,7 @@ namespace Project
             context.Ertekelesek.Add(ertplusz);
             context.SaveChanges();
 
-            ÉrtékelésListázás();
+            //ÉrtékelésListázás();
             ShowOnChart();
 
         }
@@ -129,7 +129,7 @@ namespace Project
                 textBox1.Enabled = false;
                 textBox1.Font = new Font(textBox1.Font, FontStyle.Bold);
             }
-            
+
 
             if (textBox1.Text == "")
             {

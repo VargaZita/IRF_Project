@@ -77,7 +77,7 @@ namespace Project
             Random rnd = new Random();
             string kuponkod="";
             int ertek = kuponGomb1.KuponSzam;
-            int kedvezmeny = rnd.Next(ertek, 49);
+            int kedvezmeny = rnd.Next(ertek, 51);
             KedvezmenyszazalekTextBox.Text = kedvezmeny.ToString();
             for (int i = 0; i < 6; i++)
             {

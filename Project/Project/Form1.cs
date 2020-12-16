@@ -19,9 +19,6 @@ namespace Project
             InitializeComponent();
 
             context.Termekek.Load();
-            context.Arak.Load();
-            context.Boltok.Load();
-
             
             TermékListázás();
         }
@@ -40,13 +37,7 @@ namespace Project
             TermékListázás();
         }
 
-        private void btnShowData_Click(object sender, EventArgs e)
-        {
-           
-            
-        }
-
-        
+       
 
         private void TermekListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -59,7 +50,7 @@ namespace Project
             termekekBindingSource.DataSource = context.Termekek.Local ;
         }
 
-        int n;
+        int n=0;
 
         private void AdatMegjelenitesButton_Click(object sender, EventArgs e)
         {

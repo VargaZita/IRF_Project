@@ -45,7 +45,6 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.ertekelesekDataGridView = new System.Windows.Forms.DataGridView();
             this.TermekNevTextBox = new System.Windows.Forms.TextBox();
             this.csillagszamlbl = new System.Windows.Forms.Label();
             this.megjegyzeseklbl = new System.Windows.Forms.Label();
@@ -72,14 +71,10 @@
             this.csillagSzamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mennyisegDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ertekelesSzamBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.termekekBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ertekelesekBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ertekelesekDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -204,21 +199,6 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // ertekelesekDataGridView
-            // 
-            this.ertekelesekDataGridView.AutoGenerateColumns = false;
-            this.ertekelesekDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ertekelesekDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.ertekelesekDataGridView.DataSource = this.ertekelesekBindingSource;
-            this.ertekelesekDataGridView.Location = new System.Drawing.Point(6, 69);
-            this.ertekelesekDataGridView.Name = "ertekelesekDataGridView";
-            this.ertekelesekDataGridView.Size = new System.Drawing.Size(461, 220);
-            this.ertekelesekDataGridView.TabIndex = 1;
-            this.ertekelesekDataGridView.Visible = false;
-            // 
             // TermekNevTextBox
             // 
             this.TermekNevTextBox.Location = new System.Drawing.Point(9, 8);
@@ -278,9 +258,9 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(6, 28);
+            this.panel1.Location = new System.Drawing.Point(6, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(799, 330);
+            this.panel1.Size = new System.Drawing.Size(799, 317);
             this.panel1.TabIndex = 17;
             // 
             // label1
@@ -308,9 +288,9 @@
             this.panel2.Controls.Add(this.chart1);
             this.panel2.Controls.Add(this.csillagszamlbl);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(6, 28);
+            this.panel2.Location = new System.Drawing.Point(6, 41);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(799, 330);
+            this.panel2.Size = new System.Drawing.Size(799, 317);
             this.panel2.TabIndex = 18;
             // 
             // textBox1
@@ -485,34 +465,9 @@
             // 
             this.ertekelesSzamBindingSource.DataSource = typeof(Project.ErtekelesSzam);
             // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "TermekFK";
-            this.dataGridViewTextBoxColumn2.DataSource = this.termekekBindingSource;
-            this.dataGridViewTextBoxColumn2.DisplayMember = "Nev";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Név";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn2.ValueMember = "TermekID";
-            this.dataGridViewTextBoxColumn2.Width = 200;
-            // 
             // termekekBindingSource
             // 
             this.termekekBindingSource.DataSource = typeof(Project.Termekek);
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Csillag";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Csillag";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Megjegyzesek";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Megjegyzések";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // ertekelesekBindingSource
             // 
@@ -528,7 +483,6 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.ertekelesekDataGridView);
             this.Controls.Add(this.bindingNavigator1);
             this.MaximizeBox = false;
             this.Name = "Form2";
@@ -536,7 +490,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ertekelesekDataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -568,10 +521,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.BindingSource ertekelesekBindingSource;
-        private System.Windows.Forms.DataGridView ertekelesekDataGridView;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.TextBox TermekNevTextBox;
         private System.Windows.Forms.Label csillagszamlbl;
         private ErtekeloGomb ertekeloGomb1;
