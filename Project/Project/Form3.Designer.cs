@@ -545,7 +545,7 @@
             this.Controls.Add(this.arakBindingNavigator);
             this.MaximizeBox = false;
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "Boltok";
             ((System.ComponentModel.ISupportInitialize)(this.arakBindingNavigator)).EndInit();
             this.arakBindingNavigator.ResumeLayout(false);
             this.arakBindingNavigator.PerformLayout();

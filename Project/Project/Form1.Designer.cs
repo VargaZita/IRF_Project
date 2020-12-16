@@ -956,7 +956,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Proper Phones";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingNavigator)).EndInit();
             this.termekekBindingNavigator.ResumeLayout(false);
