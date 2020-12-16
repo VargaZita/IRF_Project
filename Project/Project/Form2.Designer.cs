@@ -66,6 +66,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.ertekeloGomb1 = new Project.ErtekeloGomb();
             this.csillagSzamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mennyisegDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -284,15 +286,19 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(133, 173);
+            this.label1.Location = new System.Drawing.Point(88, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(513, 32);
+            this.label1.Size = new System.Drawing.Size(625, 69);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Az eszközhöz még nem küldtek be értékelést. Legyen ön az első!";
+            this.label1.Text = "Az eszközhöz még nem küldtek be értékelést. Legyen ön az első!\r\nHa másik termék é" +
+    "rtékelését is meg szeretné tekinteni, válasszon a lenti listából!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.atlagtextbox);
             this.panel2.Controls.Add(this.osszesentextbox);
@@ -362,7 +368,7 @@
             this.csillagSzamDataGridViewTextBoxColumn,
             this.mennyisegDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.ertekelesSzamBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 28);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(258, 220);
             this.dataGridView1.TabIndex = 18;
@@ -431,6 +437,26 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(799, 211);
             this.panel3.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(6, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(213, 15);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "A lenti listából tud terméket választani!";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(151, 226);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 13);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Megjegyzések:";
             // 
             // ertekeloGomb1
             // 
@@ -570,5 +596,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
