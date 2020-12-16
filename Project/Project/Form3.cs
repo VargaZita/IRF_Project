@@ -65,19 +65,22 @@ namespace Project
             System.Diagnostics.Process.Start(uRLTextBox.Text);
         }
 
-        private void KedvezmenyButton_Click(object sender, EventArgs e)
+        
+
+        private void kuponGomb1_Click(object sender, EventArgs e)
         {
             panel1.Visible = false;
-            KedvezmenyButton.Visible = false;
+            kuponGomb1.Visible = false;
 
-            char[] lettersnumbers = "qwertzuiopasdfghjklyxcvbnm1234567890".ToCharArray();
+            char[] lettersnumbers = "qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM1234567890".ToCharArray();
             Random rnd = new Random();
             string kuponkod="";
-            int kedvezmeny = rnd.Next(0, 49);
+            int ertek = kuponGomb1.KuponSzam;
+            int kedvezmeny = rnd.Next(ertek, 49);
             KedvezmenyszazalekTextBox.Text = kedvezmeny.ToString();
             for (int i = 0; i < 6; i++)
             {
-                kuponkod += lettersnumbers[rnd.Next(0, 35)].ToString();
+                kuponkod += lettersnumbers[rnd.Next(0, 61)].ToString();
             }
             KedvezmenykodTextBox.Text = kuponkod;
         }

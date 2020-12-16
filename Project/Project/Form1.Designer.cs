@@ -91,6 +91,16 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.termekIDTextBox = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.termekekBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.arakBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -123,6 +133,7 @@
             // 
             // gyartoLabel
             // 
+            gyartoLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             gyartoLabel.AutoSize = true;
             gyartoLabel.Location = new System.Drawing.Point(256, 81);
             gyartoLabel.Name = "gyartoLabel";
@@ -132,6 +143,7 @@
             // 
             // akku_kapacitasLabel
             // 
+            akku_kapacitasLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             akku_kapacitasLabel.AutoSize = true;
             akku_kapacitasLabel.Location = new System.Drawing.Point(256, 164);
             akku_kapacitasLabel.Name = "akku_kapacitasLabel";
@@ -141,6 +153,7 @@
             // 
             // belso_memoriaLabel
             // 
+            belso_memoriaLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             belso_memoriaLabel.AutoSize = true;
             belso_memoriaLabel.Location = new System.Drawing.Point(256, 294);
             belso_memoriaLabel.Name = "belso_memoriaLabel";
@@ -150,6 +163,7 @@
             // 
             // bovithetoLabel
             // 
+            bovithetoLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             bovithetoLabel.AutoSize = true;
             bovithetoLabel.Location = new System.Drawing.Point(256, 322);
             bovithetoLabel.Name = "bovithetoLabel";
@@ -159,6 +173,7 @@
             // 
             // dualSIMLabel
             // 
+            dualSIMLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             dualSIMLabel.AutoSize = true;
             dualSIMLabel.Location = new System.Drawing.Point(256, 109);
             dualSIMLabel.Name = "dualSIMLabel";
@@ -168,6 +183,7 @@
             // 
             // hosszusagLabel
             // 
+            hosszusagLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             hosszusagLabel.AutoSize = true;
             hosszusagLabel.Location = new System.Drawing.Point(256, 454);
             hosszusagLabel.Name = "hosszusagLabel";
@@ -177,6 +193,7 @@
             // 
             // kijelzo_mereteLabel
             // 
+            kijelzo_mereteLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             kijelzo_mereteLabel.AutoSize = true;
             kijelzo_mereteLabel.Location = new System.Drawing.Point(256, 376);
             kijelzo_mereteLabel.Name = "kijelzo_mereteLabel";
@@ -186,6 +203,7 @@
             // 
             // kijelzo_tipusaLabel
             // 
+            kijelzo_tipusaLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             kijelzo_tipusaLabel.AutoSize = true;
             kijelzo_tipusaLabel.Location = new System.Drawing.Point(256, 402);
             kijelzo_tipusaLabel.Name = "kijelzo_tipusaLabel";
@@ -195,6 +213,7 @@
             // 
             // nevLabel
             // 
+            nevLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             nevLabel.AutoSize = true;
             nevLabel.Location = new System.Drawing.Point(256, 31);
             nevLabel.Name = "nevLabel";
@@ -204,6 +223,7 @@
             // 
             // oprendszerLabel
             // 
+            oprendszerLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             oprendszerLabel.AutoSize = true;
             oprendszerLabel.Location = new System.Drawing.Point(256, 138);
             oprendszerLabel.Name = "oprendszerLabel";
@@ -213,6 +233,7 @@
             // 
             // processzor_tipusaLabel
             // 
+            processzor_tipusaLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             processzor_tipusaLabel.AutoSize = true;
             processzor_tipusaLabel.Location = new System.Drawing.Point(256, 229);
             processzor_tipusaLabel.Name = "processzor_tipusaLabel";
@@ -222,6 +243,7 @@
             // 
             // rAMLabel
             // 
+            rAMLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             rAMLabel.AutoSize = true;
             rAMLabel.Location = new System.Drawing.Point(256, 268);
             rAMLabel.Name = "rAMLabel";
@@ -231,6 +253,7 @@
             // 
             // szelessegLabel
             // 
+            szelessegLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             szelessegLabel.AutoSize = true;
             szelessegLabel.Location = new System.Drawing.Point(256, 480);
             szelessegLabel.Name = "szelessegLabel";
@@ -240,8 +263,9 @@
             // 
             // tomegLabel
             // 
+            tomegLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             tomegLabel.AutoSize = true;
-            tomegLabel.Location = new System.Drawing.Point(256, 506);
+            tomegLabel.Location = new System.Drawing.Point(256, 532);
             tomegLabel.Name = "tomegLabel";
             tomegLabel.Size = new System.Drawing.Size(43, 13);
             tomegLabel.TabIndex = 100;
@@ -249,8 +273,9 @@
             // 
             // vastagsagLabel
             // 
+            vastagsagLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             vastagsagLabel.AutoSize = true;
-            vastagsagLabel.Location = new System.Drawing.Point(256, 532);
+            vastagsagLabel.Location = new System.Drawing.Point(256, 506);
             vastagsagLabel.Name = "vastagsagLabel";
             vastagsagLabel.Size = new System.Drawing.Size(60, 13);
             vastagsagLabel.TabIndex = 102;
@@ -266,6 +291,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.GhostWhite;
+            this.pictureBox1.Image = global::Project.Properties.Resources.smartphone86x150;
             this.pictureBox1.Location = new System.Drawing.Point(60, 31);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 150);
@@ -408,9 +435,12 @@
             // 
             // termekekDataGridView
             // 
+            this.termekekDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.termekekDataGridView.AutoGenerateColumns = false;
-            this.termekekDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.termekekDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.termekekDataGridView.BackgroundColor = System.Drawing.Color.AliceBlue;
+            this.termekekDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.termekekDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.termekekDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.termekekDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3});
@@ -422,6 +452,7 @@
             // 
             // gyartoTextBox
             // 
+            this.gyartoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gyartoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Gyartok.Gyarto", true));
             this.gyartoTextBox.Enabled = false;
             this.gyartoTextBox.Location = new System.Drawing.Point(377, 78);
@@ -431,24 +462,27 @@
             // 
             // akku_kapacitasTextBox
             // 
+            this.akku_kapacitasTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.akku_kapacitasTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Akku_kapacitas", true));
             this.akku_kapacitasTextBox.Enabled = false;
             this.akku_kapacitasTextBox.Location = new System.Drawing.Point(377, 161);
             this.akku_kapacitasTextBox.Name = "akku_kapacitasTextBox";
-            this.akku_kapacitasTextBox.Size = new System.Drawing.Size(172, 20);
+            this.akku_kapacitasTextBox.Size = new System.Drawing.Size(112, 20);
             this.akku_kapacitasTextBox.TabIndex = 77;
             // 
             // belso_memoriaTextBox
             // 
+            this.belso_memoriaTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.belso_memoriaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Belso_memoria", true));
             this.belso_memoriaTextBox.Enabled = false;
             this.belso_memoriaTextBox.Location = new System.Drawing.Point(377, 288);
             this.belso_memoriaTextBox.Name = "belso_memoriaTextBox";
-            this.belso_memoriaTextBox.Size = new System.Drawing.Size(172, 20);
+            this.belso_memoriaTextBox.Size = new System.Drawing.Size(112, 20);
             this.belso_memoriaTextBox.TabIndex = 79;
             // 
             // bovithetoCheckBox
             // 
+            this.bovithetoCheckBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bovithetoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.termekekBindingSource, "Bovitheto", true));
             this.bovithetoCheckBox.Enabled = false;
             this.bovithetoCheckBox.Location = new System.Drawing.Point(417, 311);
@@ -459,6 +493,7 @@
             // 
             // dualSIMCheckBox
             // 
+            this.dualSIMCheckBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dualSIMCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.termekekBindingSource, "DualSIM", true));
             this.dualSIMCheckBox.Enabled = false;
             this.dualSIMCheckBox.Location = new System.Drawing.Point(417, 101);
@@ -469,24 +504,27 @@
             // 
             // hosszusagTextBox
             // 
+            this.hosszusagTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.hosszusagTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Hosszusag", true));
             this.hosszusagTextBox.Enabled = false;
             this.hosszusagTextBox.Location = new System.Drawing.Point(377, 451);
             this.hosszusagTextBox.Name = "hosszusagTextBox";
-            this.hosszusagTextBox.Size = new System.Drawing.Size(172, 20);
+            this.hosszusagTextBox.Size = new System.Drawing.Size(112, 20);
             this.hosszusagTextBox.TabIndex = 85;
             // 
             // kijelzo_mereteTextBox
             // 
+            this.kijelzo_mereteTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.kijelzo_mereteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Kijelzo_merete", true));
             this.kijelzo_mereteTextBox.Enabled = false;
             this.kijelzo_mereteTextBox.Location = new System.Drawing.Point(377, 373);
             this.kijelzo_mereteTextBox.Name = "kijelzo_mereteTextBox";
-            this.kijelzo_mereteTextBox.Size = new System.Drawing.Size(172, 20);
+            this.kijelzo_mereteTextBox.Size = new System.Drawing.Size(112, 20);
             this.kijelzo_mereteTextBox.TabIndex = 87;
             // 
             // kijelzo_tipusaTextBox
             // 
+            this.kijelzo_tipusaTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.kijelzo_tipusaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Kijelzo_tipusa", true));
             this.kijelzo_tipusaTextBox.Enabled = false;
             this.kijelzo_tipusaTextBox.Location = new System.Drawing.Point(377, 399);
@@ -496,6 +534,7 @@
             // 
             // nevTextBox
             // 
+            this.nevTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.nevTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Nev", true));
             this.nevTextBox.Enabled = false;
             this.nevTextBox.Location = new System.Drawing.Point(377, 28);
@@ -506,6 +545,7 @@
             // 
             // oprendszerTextBox
             // 
+            this.oprendszerTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.oprendszerTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Oprendszer", true));
             this.oprendszerTextBox.Enabled = false;
             this.oprendszerTextBox.Location = new System.Drawing.Point(377, 135);
@@ -515,6 +555,7 @@
             // 
             // processzor_tipusaTextBox
             // 
+            this.processzor_tipusaTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.processzor_tipusaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Processzor_tipusa", true));
             this.processzor_tipusaTextBox.Enabled = false;
             this.processzor_tipusaTextBox.Location = new System.Drawing.Point(377, 223);
@@ -525,42 +566,47 @@
             // 
             // rAMTextBox
             // 
+            this.rAMTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rAMTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "RAM", true));
             this.rAMTextBox.Enabled = false;
             this.rAMTextBox.Location = new System.Drawing.Point(377, 262);
             this.rAMTextBox.Name = "rAMTextBox";
-            this.rAMTextBox.Size = new System.Drawing.Size(172, 20);
+            this.rAMTextBox.Size = new System.Drawing.Size(112, 20);
             this.rAMTextBox.TabIndex = 97;
             // 
             // szelessegTextBox
             // 
+            this.szelessegTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.szelessegTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Szelesseg", true));
             this.szelessegTextBox.Enabled = false;
             this.szelessegTextBox.Location = new System.Drawing.Point(377, 477);
             this.szelessegTextBox.Name = "szelessegTextBox";
-            this.szelessegTextBox.Size = new System.Drawing.Size(172, 20);
+            this.szelessegTextBox.Size = new System.Drawing.Size(112, 20);
             this.szelessegTextBox.TabIndex = 99;
             // 
             // tomegTextBox
             // 
+            this.tomegTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tomegTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Tomeg", true));
             this.tomegTextBox.Enabled = false;
-            this.tomegTextBox.Location = new System.Drawing.Point(377, 503);
+            this.tomegTextBox.Location = new System.Drawing.Point(377, 529);
             this.tomegTextBox.Name = "tomegTextBox";
-            this.tomegTextBox.Size = new System.Drawing.Size(172, 20);
+            this.tomegTextBox.Size = new System.Drawing.Size(112, 20);
             this.tomegTextBox.TabIndex = 101;
             // 
             // vastagsagTextBox
             // 
+            this.vastagsagTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.vastagsagTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "Vastagsag", true));
             this.vastagsagTextBox.Enabled = false;
-            this.vastagsagTextBox.Location = new System.Drawing.Point(377, 529);
+            this.vastagsagTextBox.Location = new System.Drawing.Point(377, 503);
             this.vastagsagTextBox.Name = "vastagsagTextBox";
-            this.vastagsagTextBox.Size = new System.Drawing.Size(172, 20);
+            this.vastagsagTextBox.Size = new System.Drawing.Size(112, 20);
             this.vastagsagTextBox.TabIndex = 103;
             // 
             // MuszakiLabel
             // 
+            this.MuszakiLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.MuszakiLabel.AutoSize = true;
             this.MuszakiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.MuszakiLabel.Location = new System.Drawing.Point(256, 199);
@@ -571,6 +617,7 @@
             // 
             // KijelzoLabel
             // 
+            this.KijelzoLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.KijelzoLabel.AutoSize = true;
             this.KijelzoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.KijelzoLabel.Location = new System.Drawing.Point(256, 352);
@@ -581,6 +628,7 @@
             // 
             // MeretLabel
             // 
+            this.MeretLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.MeretLabel.AutoSize = true;
             this.MeretLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.MeretLabel.Location = new System.Drawing.Point(256, 430);
@@ -591,17 +639,24 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Lavender;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(259, 28);
+            this.panel1.Location = new System.Drawing.Point(259, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 528);
+            this.panel1.Size = new System.Drawing.Size(290, 529);
             this.panel1.TabIndex = 107;
             // 
             // AdatMegjelenitesButton
             // 
+            this.AdatMegjelenitesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.AdatMegjelenitesButton.Location = new System.Drawing.Point(16, 512);
             this.AdatMegjelenitesButton.Name = "AdatMegjelenitesButton";
             this.AdatMegjelenitesButton.Size = new System.Drawing.Size(210, 44);
@@ -612,6 +667,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(13, 20);
             this.label1.Name = "label1";
@@ -622,8 +680,11 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(3, 94);
+            this.label2.Location = new System.Drawing.Point(3, 111);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(284, 42);
             this.label2.TabIndex = 1;
@@ -631,18 +692,24 @@
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(3, 149);
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(19, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(284, 53);
+            this.label3.Size = new System.Drawing.Size(257, 53);
             this.label3.TabIndex = 1;
             this.label3.Text = "Ha már tudja, hogy melyik termékre kíváncsi, lehetősége van a termék nevére szűrn" +
     "i.";
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(3, 214);
+            this.label4.Location = new System.Drawing.Point(3, 231);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(284, 53);
             this.label4.TabIndex = 1;
@@ -651,11 +718,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(632, 81);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(646, 201);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 41);
             this.button1.TabIndex = 109;
-            this.button1.Text = "Értékelések megtekintése";
+            this.button1.Text = "Értékelések";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -667,6 +735,7 @@
             // 
             // termekIDLabel
             // 
+            termekIDLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             termekIDLabel.AutoSize = true;
             termekIDLabel.Location = new System.Drawing.Point(256, 68);
             termekIDLabel.Name = "termekIDLabel";
@@ -677,6 +746,7 @@
             // 
             // termekIDTextBox
             // 
+            this.termekIDTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.termekIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.termekekBindingSource, "TermekID", true));
             this.termekIDTextBox.Location = new System.Drawing.Point(377, 61);
             this.termekIDTextBox.Name = "termekIDTextBox";
@@ -686,13 +756,127 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(632, 238);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(646, 376);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(124, 41);
             this.button2.TabIndex = 109;
-            this.button2.Text = "Árak áttekintése";
+            this.button2.Text = "Árak";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(3, 309);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(273, 56);
+            this.label5.TabIndex = 111;
+            this.label5.Text = "Az egyes termékek értékelésének megtekintéséhez kattintson az értékelések gombra!" +
+    "";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(3, 389);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(273, 45);
+            this.label6.TabIndex = 112;
+            this.label6.Text = "A boltok és az árak megtekintéséhez kattintson az árak feliratú gombra";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.AutoSize = true;
+            this.label7.Enabled = false;
+            this.label7.Location = new System.Drawing.Point(496, 454);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(23, 13);
+            this.label7.TabIndex = 111;
+            this.label7.Text = "mm";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.AutoSize = true;
+            this.label8.Enabled = false;
+            this.label8.Location = new System.Drawing.Point(496, 480);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(23, 13);
+            this.label8.TabIndex = 111;
+            this.label8.Text = "mm";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label9.AutoSize = true;
+            this.label9.Enabled = false;
+            this.label9.Location = new System.Drawing.Point(496, 506);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(23, 13);
+            this.label9.TabIndex = 111;
+            this.label9.Text = "mm";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.Enabled = false;
+            this.label10.Location = new System.Drawing.Point(496, 532);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(13, 13);
+            this.label10.TabIndex = 111;
+            this.label10.Text = "g";
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label11.AutoSize = true;
+            this.label11.Enabled = false;
+            this.label11.Location = new System.Drawing.Point(496, 376);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(27, 13);
+            this.label11.TabIndex = 111;
+            this.label11.Text = "inch";
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label12.AutoSize = true;
+            this.label12.Enabled = false;
+            this.label12.Location = new System.Drawing.Point(496, 293);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(22, 13);
+            this.label12.TabIndex = 112;
+            this.label12.Text = "GB";
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label13.AutoSize = true;
+            this.label13.Enabled = false;
+            this.label13.Location = new System.Drawing.Point(497, 265);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(22, 13);
+            this.label13.TabIndex = 112;
+            this.label13.Text = "GB";
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label14.AutoSize = true;
+            this.label14.Enabled = false;
+            this.label14.Location = new System.Drawing.Point(495, 168);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(28, 13);
+            this.label14.TabIndex = 112;
+            this.label14.Text = "mAh";
             // 
             // termekekBindingSource
             // 
@@ -717,7 +901,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(840, 569);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -763,6 +947,14 @@
             this.Controls.Add(this.TermekTextBox);
             this.Controls.Add(this.termekIDTextBox);
             this.Controls.Add(termekIDLabel);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -830,6 +1022,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.TextBox termekIDTextBox;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
 
