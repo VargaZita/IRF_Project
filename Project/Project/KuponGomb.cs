@@ -23,9 +23,9 @@ namespace Project
 
         public KuponGomb()
         {
-            Height = 25;
-            Width = Height;
-            BackColor = Color.RoyalBlue;
+            Height = 50;
+            Width = 130;
+            BackColor = Color.AliceBlue;
             Text = "Lássuk a kedvezményt";
 
             

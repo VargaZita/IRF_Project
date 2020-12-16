@@ -61,15 +61,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.KedvezmenyszazalekTextBox = new System.Windows.Forms.TextBox();
             this.KedvezmenykodTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.arakBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kuponGomb1 = new Project.KuponGomb();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.boltokBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.arakBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.termekekBindingSource = new System.Windows.Forms.BindingSource(this.components);
             arLabel = new System.Windows.Forms.Label();
             nevLabel = new System.Windows.Forms.Label();
@@ -79,15 +84,18 @@
             this.arakBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arakDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.boltokBindingSource)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arakBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boltokBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // arLabel
             // 
             arLabel.AutoSize = true;
-            arLabel.Location = new System.Drawing.Point(198, 337);
+            arLabel.Location = new System.Drawing.Point(223, 68);
             arLabel.Name = "arLabel";
             arLabel.Size = new System.Drawing.Size(20, 13);
             arLabel.TabIndex = 4;
@@ -96,7 +104,7 @@
             // nevLabel
             // 
             nevLabel.AutoSize = true;
-            nevLabel.Location = new System.Drawing.Point(198, 360);
+            nevLabel.Location = new System.Drawing.Point(223, 91);
             nevLabel.Name = "nevLabel";
             nevLabel.Size = new System.Drawing.Size(57, 13);
             nevLabel.TabIndex = 14;
@@ -105,7 +113,7 @@
             // uRLLabel
             // 
             uRLLabel.AutoSize = true;
-            uRLLabel.Location = new System.Drawing.Point(198, 389);
+            uRLLabel.Location = new System.Drawing.Point(223, 120);
             uRLLabel.Name = "uRLLabel";
             uRLLabel.Size = new System.Drawing.Size(32, 13);
             uRLLabel.TabIndex = 16;
@@ -114,7 +122,7 @@
             // nevLabel1
             // 
             nevLabel1.AutoSize = true;
-            nevLabel1.Location = new System.Drawing.Point(198, 291);
+            nevLabel1.Location = new System.Drawing.Point(223, 22);
             nevLabel1.Name = "nevLabel1";
             nevLabel1.Size = new System.Drawing.Size(82, 13);
             nevLabel1.TabIndex = 34;
@@ -249,7 +257,7 @@
             this.arTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arakBindingSource, "Ar", true));
             this.arTextBox.Enabled = false;
             this.arTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.arTextBox.Location = new System.Drawing.Point(290, 334);
+            this.arTextBox.Location = new System.Drawing.Point(315, 65);
             this.arTextBox.Name = "arTextBox";
             this.arTextBox.Size = new System.Drawing.Size(120, 20);
             this.arTextBox.TabIndex = 5;
@@ -260,7 +268,7 @@
             this.nevTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arakBindingSource, "Boltok.Nev", true));
             this.nevTextBox.Enabled = false;
             this.nevTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.nevTextBox.Location = new System.Drawing.Point(290, 360);
+            this.nevTextBox.Location = new System.Drawing.Point(315, 91);
             this.nevTextBox.Name = "nevTextBox";
             this.nevTextBox.Size = new System.Drawing.Size(170, 20);
             this.nevTextBox.TabIndex = 15;
@@ -269,7 +277,7 @@
             // 
             this.uRLTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arakBindingSource, "Boltok.URL", true));
             this.uRLTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.uRLTextBox.Location = new System.Drawing.Point(290, 389);
+            this.uRLTextBox.Location = new System.Drawing.Point(315, 120);
             this.uRLTextBox.Name = "uRLTextBox";
             this.uRLTextBox.ReadOnly = true;
             this.uRLTextBox.Size = new System.Drawing.Size(170, 20);
@@ -281,7 +289,7 @@
             this.nevTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arakBindingSource, "Termekek.Nev", true));
             this.nevTextBox1.Enabled = false;
             this.nevTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.nevTextBox1.Location = new System.Drawing.Point(290, 284);
+            this.nevTextBox1.Location = new System.Drawing.Point(315, 15);
             this.nevTextBox1.Multiline = true;
             this.nevTextBox1.Name = "nevTextBox1";
             this.nevTextBox1.Size = new System.Drawing.Size(170, 44);
@@ -302,19 +310,21 @@
             // arakDataGridView
             // 
             this.arakDataGridView.AutoGenerateColumns = false;
+            this.arakDataGridView.BackgroundColor = System.Drawing.Color.Lavender;
+            this.arakDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.arakDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.arakDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5});
             this.arakDataGridView.DataSource = this.arakBindingSource;
-            this.arakDataGridView.Location = new System.Drawing.Point(375, 74);
+            this.arakDataGridView.Location = new System.Drawing.Point(13, 45);
             this.arakDataGridView.Name = "arakDataGridView";
-            this.arakDataGridView.Size = new System.Drawing.Size(259, 187);
+            this.arakDataGridView.Size = new System.Drawing.Size(259, 189);
             this.arakDataGridView.TabIndex = 35;
             // 
             // TermekListBox
             // 
             this.TermekListBox.FormattingEnabled = true;
-            this.TermekListBox.Location = new System.Drawing.Point(75, 103);
+            this.TermekListBox.Location = new System.Drawing.Point(43, 74);
             this.TermekListBox.Name = "TermekListBox";
             this.TermekListBox.Size = new System.Drawing.Size(180, 160);
             this.TermekListBox.TabIndex = 36;
@@ -322,7 +332,7 @@
             // 
             // TermekTextBox
             // 
-            this.TermekTextBox.Location = new System.Drawing.Point(75, 74);
+            this.TermekTextBox.Location = new System.Drawing.Point(43, 45);
             this.TermekTextBox.Name = "TermekTextBox";
             this.TermekTextBox.Size = new System.Drawing.Size(180, 20);
             this.TermekTextBox.TabIndex = 37;
@@ -331,9 +341,9 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(34, 29);
+            this.label1.Location = new System.Drawing.Point(14, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 42);
+            this.label1.Size = new System.Drawing.Size(259, 42);
             this.label1.TabIndex = 38;
             this.label1.Text = "Válassza ki a terméket! A keresőbe írva tud tovább szűrni.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -341,9 +351,9 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(360, 29);
+            this.label2.Location = new System.Drawing.Point(13, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(285, 42);
+            this.label2.Size = new System.Drawing.Size(259, 42);
             this.label2.TabIndex = 38;
             this.label2.Text = "Válassza ki az értékesítőt!";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -351,17 +361,17 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(466, 284);
+            this.label3.Location = new System.Drawing.Point(511, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(238, 101);
+            this.label3.Size = new System.Drawing.Size(191, 39);
             this.label3.TabIndex = 38;
-            this.label3.Text = "A linkre duplán kattintva meg tudja nyitni a bolt weboldalát.";
+            this.label3.Text = "A linkre duplán kattintva tudja megnyitni a bolt weboldalát.";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(417, 336);
+            this.label4.Location = new System.Drawing.Point(442, 67);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 18);
             this.label4.TabIndex = 39;
@@ -369,16 +379,29 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.kuponGomb1);
-            this.panel1.Location = new System.Drawing.Point(12, 277);
+            this.panel1.Location = new System.Drawing.Point(10, 15);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(168, 125);
+            this.panel1.Size = new System.Drawing.Size(207, 125);
             this.panel1.TabIndex = 41;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(3, 1);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(201, 62);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "Egyedi kedvezményeket biztosítunk felhasználóink számára. Kattintson a gombra, ha" +
+    " meg akarja nézni!";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 291);
+            this.label5.Location = new System.Drawing.Point(35, 23);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 13);
             this.label5.TabIndex = 42;
@@ -387,7 +410,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(103, 314);
+            this.label6.Location = new System.Drawing.Point(109, 42);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(15, 13);
             this.label6.TabIndex = 42;
@@ -395,36 +418,95 @@
             // 
             // KedvezmenyszazalekTextBox
             // 
-            this.KedvezmenyszazalekTextBox.Location = new System.Drawing.Point(49, 307);
+            this.KedvezmenyszazalekTextBox.Location = new System.Drawing.Point(38, 39);
             this.KedvezmenyszazalekTextBox.Name = "KedvezmenyszazalekTextBox";
             this.KedvezmenyszazalekTextBox.ReadOnly = true;
-            this.KedvezmenyszazalekTextBox.Size = new System.Drawing.Size(48, 20);
+            this.KedvezmenyszazalekTextBox.Size = new System.Drawing.Size(65, 20);
             this.KedvezmenyszazalekTextBox.TabIndex = 43;
             // 
             // KedvezmenykodTextBox
             // 
-            this.KedvezmenykodTextBox.Location = new System.Drawing.Point(27, 353);
+            this.KedvezmenykodTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.KedvezmenykodTextBox.Location = new System.Drawing.Point(38, 107);
             this.KedvezmenykodTextBox.Name = "KedvezmenykodTextBox";
             this.KedvezmenykodTextBox.ReadOnly = true;
-            this.KedvezmenykodTextBox.Size = new System.Drawing.Size(127, 20);
+            this.KedvezmenykodTextBox.Size = new System.Drawing.Size(65, 21);
             this.KedvezmenykodTextBox.TabIndex = 43;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(24, 337);
+            this.label7.Location = new System.Drawing.Point(35, 91);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 13);
             this.label7.TabIndex = 42;
             this.label7.Text = "Kedvezménykód:";
             // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(511, 60);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(191, 73);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "Kedvezményét vásárláskor az értékesítő weboldalán tudja majd a kuponkód beírásáva" +
+    "l érvényesíteni.";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.TermekListBox);
+            this.panel2.Controls.Add(this.TermekTextBox);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(75, 35);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(287, 241);
+            this.panel2.TabIndex = 44;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.arakDataGridView);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(386, 34);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(291, 241);
+            this.panel3.TabIndex = 45;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.nevTextBox1);
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.KedvezmenyszazalekTextBox);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.KedvezmenykodTextBox);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.arTextBox);
+            this.panel4.Controls.Add(nevLabel1);
+            this.panel4.Controls.Add(arLabel);
+            this.panel4.Controls.Add(this.uRLTextBox);
+            this.panel4.Controls.Add(nevLabel);
+            this.panel4.Controls.Add(uRLLabel);
+            this.panel4.Controls.Add(this.nevTextBox);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Location = new System.Drawing.Point(12, 295);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(709, 150);
+            this.panel4.TabIndex = 46;
+            // 
+            // arakBindingSource
+            // 
+            this.arakBindingSource.DataSource = typeof(Project.Arak);
+            // 
             // kuponGomb1
             // 
             this.kuponGomb1.BackColor = System.Drawing.Color.RoyalBlue;
             this.kuponGomb1.KuponSzam = 0;
-            this.kuponGomb1.Location = new System.Drawing.Point(25, 36);
+            this.kuponGomb1.Location = new System.Drawing.Point(37, 71);
             this.kuponGomb1.Name = "kuponGomb1";
-            this.kuponGomb1.Size = new System.Drawing.Size(111, 47);
+            this.kuponGomb1.Size = new System.Drawing.Size(130, 50);
             this.kuponGomb1.TabIndex = 41;
             this.kuponGomb1.Text = "Lássuk a kedvezményt!";
             this.kuponGomb1.UseVisualStyleBackColor = false;
@@ -446,10 +528,6 @@
             // 
             this.boltokBindingSource.DataSource = typeof(Project.Boltok);
             // 
-            // arakBindingSource
-            // 
-            this.arakBindingSource.DataSource = typeof(Project.Arak);
-            // 
             // termekekBindingSource
             // 
             this.termekekBindingSource.DataSource = typeof(Project.Termekek);
@@ -459,29 +537,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(734, 414);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.TermekTextBox);
-            this.Controls.Add(this.TermekListBox);
-            this.Controls.Add(this.arakDataGridView);
-            this.Controls.Add(nevLabel1);
-            this.Controls.Add(this.nevTextBox1);
-            this.Controls.Add(nevLabel);
-            this.Controls.Add(this.nevTextBox);
-            this.Controls.Add(uRLLabel);
-            this.Controls.Add(this.uRLTextBox);
-            this.Controls.Add(arLabel);
-            this.Controls.Add(this.arTextBox);
+            this.BackColor = System.Drawing.Color.Lavender;
+            this.ClientSize = new System.Drawing.Size(734, 460);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.arakBindingNavigator);
-            this.Controls.Add(this.KedvezmenykodTextBox);
-            this.Controls.Add(this.KedvezmenyszazalekTextBox);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
+            this.MaximizeBox = false;
             this.Name = "Form3";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.arakBindingNavigator)).EndInit();
@@ -489,8 +551,13 @@
             this.arakBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arakDataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.boltokBindingSource)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arakBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boltokBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.termekekBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -536,5 +603,10 @@
         private System.Windows.Forms.TextBox KedvezmenykodTextBox;
         private System.Windows.Forms.Label label7;
         private KuponGomb kuponGomb1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

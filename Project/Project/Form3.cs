@@ -27,6 +27,7 @@ namespace Project
 
             TermékListázás();
             ÁrListázás();
+            label9.Visible = false;
         }
 
         private void TermékListázás()
@@ -83,6 +84,7 @@ namespace Project
                 kuponkod += lettersnumbers[rnd.Next(0, 61)].ToString();
             }
             KedvezmenykodTextBox.Text = kuponkod;
+            label9.Visible = true;
         }
     }
 }

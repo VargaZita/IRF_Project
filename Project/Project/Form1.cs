@@ -68,10 +68,13 @@ namespace Project
             if (n % 2 == 0)
             {
                 panel1.Visible = true;
+                AdatMegjelenitesButton.Text = "Termék Adatainak Megjelenítése";
             }
             else
             {
                 panel1.Visible = false;
+                AdatMegjelenitesButton.Text = "Elrejtés";
+
             }
 
         }

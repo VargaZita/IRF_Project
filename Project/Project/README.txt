@@ -1,4 +1,4 @@
-﻿﻿Projekt: Az árukeresőhöz hasonló tesmékösszehasonlító alkalmazás. 
+﻿﻿Projekt: Az árukeresőhöz hasonló termékösszehasonlító alkalmazás. 
 Termékek: Mobiltelefonok
 
 Tervezett funkciók:
